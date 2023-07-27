@@ -45,7 +45,8 @@ My passion lies in the captivating world of natural language processing, where I
 - Learning to Build Reasoning Chains by Reliable Path Retrieval| Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao,  **ICASSP 2023 Poster**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10097146)
 - Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model| Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao, **EACL 2023 Poster**, [[PDF]](https://aclanthology.org/2023.eacl-main.73/), [[CODE]](https://github.com/WENGSYX/ATTEMPT)
 - MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs| Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao, **EMNLP 2022 Demo**, [[PDF]](https://aclanthology.org/2022.emnlp-demos.15/), [[CODE]](https://github.com/WENGSYX/LingYi), [[DEMO]](https://www.bilibili.com/video/BV1BP4y177r8/)
-- 
+
+
 # 🎖 Honors and Awards
 - *2022.05* BioNLP-2022:   Medical Video Classification, **First Place**
 - *2022.01* SemEval22-Task3 PreTENS, **First Place**
