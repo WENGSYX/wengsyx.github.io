@@ -44,12 +44,13 @@ My passion lies in the captivating world of natural language processing, where I
 [Large Language Models are Better Reasoners with Self-Verification](https://arxiv.org/abs/2212.09561)
 
 **Yixuan Weng**, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Kang Liu, Jun Zhao
-
+<div>
 [**Project**](https://github.com/WENGSYX/Self-Verification) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We have demonstrated that language models have the capability for self-verification, and can further improve their own reasoning abilities.
-- 
+</div>
+<div>
 [**Demo**](https://www.bilibili.com/video/BV1as4y1F74k/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-
+</div>
 </div>
 </div>
 
@@ -129,12 +130,13 @@ Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
 [MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs](https://aclanthology.org/2022.emnlp-demos.15/)
 
 Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao
-
+<div>
 [**Project**](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We propose MedConQA, a medical conversational QA system using knowledge graphs, to address weak scalability, insufficient knowledge, and poor controllability in existing systems. It is a pipeline framework with open-sourced modular tools for flexibility. We construct a Chinese Medical Knowledge Graph and a Chinese Medical CQA dataset to enable knowledge-grounded dialogues. We also use SoTA techniques to keep responses controllable, as validated through professional evaluations. Code, data, and tools are open-sourced to advance research.
-
+</div>
+<div>
 [**Demo**](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-
+</div>
 </div>
 </div>
 
