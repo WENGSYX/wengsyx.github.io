@@ -54,4 +54,4 @@ My passion lies in the captivating world of natural language processing, where I
 
 
 # 💻 Internships
-- *2022.09 - *, CASIA, China.
+- 2022.09 - , CASIA, China.
