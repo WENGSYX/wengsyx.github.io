@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yixuan Weng"
-description              : "My passion lies in the captivating world of natural language processing, where I love delving into its intricacies and uncovering its hidden potential. An explorer at heart, I am captivated by the thrill of investigating novel concepts, while tedious, repetitive engineering tasks hold little allure for me. "
+description              : "2002.10.12"
 repository               : "WENGSYX/wengsyx.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yixuan Weng"
-  avatar           : "images/android-chrome-512x512.png"
+  avatar           : "images/wyx.jpg"
   bio              : 
   location         : "Beijing, China"
   employer         :
@@ -44,8 +44,8 @@ author:
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
+  dblp             : # e.g., "https://dblp.org/pid/298/8205.html"
+  orcid            : # e.g., "https://orcid.org/0000-0002-9720-8689"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
