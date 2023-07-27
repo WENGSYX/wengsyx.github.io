@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Jiaxin Shi">
+
+  <title>KQA Pro Homepage</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLKG3T9QJ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QLKG3T9QJ2');
+  </script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KQA Pro</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://arxiv.org/abs/2007.03875">Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demo.html">Demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/排行榜.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Leaderboard</h1>
+            <span class="subheading">Submit your predictions and get your ranking.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+    <div class="row block-light" style="padding: 30px;">
+      <div class="col-md-4 auto-vertical-center">
+        <h1>How to submit</h1>
+      </div>
+      <div class="col-md-8" style="font-size:17px; text-align:justify;">
+        <p>You need to predict answers for all questions of test set and write them in a text file in order. Here is an
+          <a href="https://cloud.tsinghua.edu.cn/f/c0c854b78c2b4bdc891b/?dl=1" style="color:purple;">example</a>. Then you need to send the prediction file
+          to us by email <a href="mailto:#">caosl19@mails.tsinghua.edu.cn</a>. We will reply to you with the performance
+          as soon as possible.<br>
+          If you would like to <strong>participate in the learderboard</strong>, you must provide following information
+          in your email:
+        <ul>
+          <li>Model name</li>
+          <li>Affiliation</li>
+          <li>Open-ended <b>OR</b> multiple-choice</li>
+          <li>Whether use the supervision of SPARQL <b>OR</b> not</li>
+          <li>Whether use the supervision of program <b>OR</b> not</li>
+          <li>single model <b>OR</b> ensemble model</li>
+          <li><i style="color:grey">(optional)</i> Paper link</li>
+          <li><i style="color:grey">(optional)</i> Paper is accepted in which conference or journal</li>
+          <li><i style="color:grey">(optional)</i> Code link</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="row block-dark-table-head">
+      <div class="col-md-10 mx-auto">
+        Open-Ended Setting
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="card card-outline-secondary">
+          <div class="card-body">
+            <table class="table table-responsive leaderboard-table">
+              <colgroup>
+                <col class="col-rank" />
+                <col class="col-model" />
+                <col class="col-overall" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th rowspan="2" class="align-middle">Rank</th>
+                  <th rowspan="2" class="align-middle">Model</th>
+                  <th rowspan="2" class="align-middle">Overall</th>
+                  <th colspan="7">Details</th>
+                </tr>
+                <tr>
+                  <th class="detail-head">Multi-hop</th>
+                  <th class="detail-head">Qualifier</th>
+                  <th class="detail-head">Comparison</th>
+                  <th class="detail-head">Logical</th>
+                  <th class="detail-head">Count</th>
+                  <th class="detail-head">Verify</th>
+                  <th class="detail-head">Zero-shot</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle human">#</td>
+                  <td class="align-middle human">Human</td>
+                  <td class="align-middle human">97.50</td>
+                  <td class="align-middle human">97.24</td>
+                  <td class="align-middle human">95.65</td>
+                  <td class="align-middle human">100.00</td>
+                  <td class="align-middle human">98.18</td>
+                  <td class="align-middle human">83.33</td>
+                  <td class="align-middle human">95.24</td>
+                  <td class="align-middle human">100.00</td>
+                </tr>
+
+
+
+
+
+
+
+                <!-- start open-ended data -->
+                <tr>
+                <td class="align-middle">1<br><span class="badge badge-secondary">30-March-23</span></td>
+                <td class="align-middle">TrackerQA<sup><span class="badge badge-success">SPARQL</span><span class="badge badge-info">Ensemble</span></sup><br><span class="affliation">East China Normal University (ECNU-XIAO I Lab)</span><br></td>
+                <td class="align-middle"><strong>95.32</strong></td>
+                <td class="align-middle"><strong>94.76</strong></td>
+                <td class="align-middle"><strong>93.83</strong></td>
+                <td class="align-middle"><strong>98.08</strong></td>
+                <td class="align-middle"><strong>94.66</strong></td>
+                <td class="align-middle"><strong>89.47</strong></td>
+                <td class="align-middle"><strong>94.54</strong></td>
+                <td class="align-middle"><strong>96.64</strong></td>
+                </tr>
+                <tr>
+                <td class="align-middle">2<br><span class="badge badge-secondary">8-June-22</span></td>
+                <td class="align-middle">GRC-MTL<sup><span class="badge badge-primary">Program</span><span class="badge badge-info">Ensemble</span></sup><br><span class="affliation">Harbin Institute of Technology (ITNLP Lab)</span><br></td>
+                <td class="align-middle">93.85</td>
+                <td class="align-middle">92.87</td>
+                <td class="align-middle">92.13</td>
+                <td class="align-middle">96.68</td>
+                <td class="align-middle">93.71</td>
+                <td class="align-middle">89.32</td>
+                <td class="align-middle">91.09</td>
+                <td class="align-middle">93.85</td>
+                </tr>
+                <tr>
+                <td class="align-middle">3<br><span class="badge badge-secondary">21-Nov-21</span></td>
+                <td class="align-middle">XT-MTL<sup><span class="badge badge-primary">Program</span></sup><br><span class="affliation">Beihang University (ACT Lab)</span><br></td>
+                <td class="align-middle">92.45</td>
+                <td class="align-middle">91.37</td>
+                <td class="align-middle">87.95</td>
+                <td class="align-middle">96.59</td>
+                <td class="align-middle">90.26</td>
+                <td class="align-middle">87.51</td>
+                <td class="align-middle">94.06</td>
+                <td class="align-middle">91.37</td>
+                </tr>
+                <tr>
+                <td class="align-middle">4<br><span class="badge badge-secondary">30-March-23</span></td>
+                <td class="align-middle">TrackerQA<sup><span class="badge badge-success">SPARQL</span></sup><br><span class="affliation">East China Normal University (ECNU-XIAO I Lab)</span><br></td>
+                <td class="align-middle">92.40</td>
+                <td class="align-middle">91.29</td>
+                <td class="align-middle">88.69</td>
+                <td class="align-middle">97.24</td>
+                <td class="align-middle">90.65</td>
+                <td class="align-middle">87.81</td>
+                <td class="align-middle">94.27</td>
+                <td class="align-middle">92.01</td>
+                </tr>
+                <tr>
+                <td class="align-middle">5<br><span class="badge badge-secondary">14-May-22</span></td>
+                <td class="align-middle">GRC_Model<sup><span class="badge badge-primary">Program</span><span class="badge badge-info">Ensemble</span></sup><br><span class="affliation">Harbin Institute of Technology (ITNLP Lab)</span><br></td>
+                <td class="align-middle">91.94</td>
+                <td class="align-middle">90.78</td>
+                <td class="align-middle">88.94</td>
+                <td class="align-middle">94.76</td>
+                <td class="align-middle">91.13</td>
+                <td class="align-middle">88.56</td>
+                <td class="align-middle">90.26</td>
+                <td class="align-middle">87.37</td>
+                </tr>
+                <tr>
+                <td class="align-middle">6<br><span class="badge badge-secondary">11-December-22</span></td>
+                <td class="align-middle">GraphQ IR<sup><span class="badge badge-primary">Program</span><span class="badge badge-success">SPARQL</span></sup><br><span class="affliation">Tsinghua University (PACMAN lab)</span><br><a href="https://arxiv.org/pdf/2205.12078.pdf" class="paper-link">[EMNLP22]</a><a href="https://github.com/Flitternie/GraphQ_IR" class="paper-link">[code]</a></td>
+                <td class="align-middle">91.70</td>
+                <td class="align-middle">90.38</td>
+                <td class="align-middle">84.90</td>
+                <td class="align-middle">97.15</td>
+                <td class="align-middle">92.64</td>
+                <td class="align-middle">89.39</td>
+                <td class="align-middle">94.20</td>
+                <td class="align-middle">94.20</td>
+                </tr>
+                <tr>
+                <td class="align-middle">7<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">BART Program<sup><span class="badge badge-primary">Program</span></sup><br><a href="https://arxiv.org/pdf/2007.03875.pdf" class="paper-link">[paper]</a><a href="https://github.com/shijx12/KQAPro_Baselines" class="paper-link">[code]</a></td>
+                <td class="align-middle">90.55</td>
+                <td class="align-middle">89.46</td>
+                <td class="align-middle">84.76</td>
+                <td class="align-middle">95.51</td>
+                <td class="align-middle">89.30</td>
+                <td class="align-middle">86.68</td>
+                <td class="align-middle">93.30</td>
+                <td class="align-middle">89.59</td>
+                </tr>
+                <tr>
+                <td class="align-middle">8<br><span class="badge badge-secondary">02-Jun-21</span></td>
+                <td class="align-middle">GtReason<sup><span class="badge badge-primary">Program</span></sup><br><span class="affliation">Huazhong University of Science and Technology (CCIIP Lab)</span><br></td>
+                <td class="align-middle">89.95</td>
+                <td class="align-middle">88.59</td>
+                <td class="align-middle">83.98</td>
+                <td class="align-middle">95.79</td>
+                <td class="align-middle">88.79</td>
+                <td class="align-middle">86.53</td>
+                <td class="align-middle">89.57</td>
+                <td class="align-middle">89.78</td>
+                </tr>
+                <tr>
+                <td class="align-middle">9<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">BART SPARQL<sup><span class="badge badge-success">SPARQL</span></sup><br><a href="https://arxiv.org/pdf/2007.03875.pdf" class="paper-link">[paper]</a><a href="https://github.com/shijx12/KQAPro_Baselines" class="paper-link">[code]</a></td>
+                <td class="align-middle">89.68</td>
+                <td class="align-middle">88.49</td>
+                <td class="align-middle">83.09</td>
+                <td class="align-middle">96.12</td>
+                <td class="align-middle">88.67</td>
+                <td class="align-middle">85.78</td>
+                <td class="align-middle">92.33</td>
+                <td class="align-middle">87.88</td>
+                </tr>
+                <tr>
+                <td class="align-middle">10<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">RNN Program<sup><span class="badge badge-primary">Program</span></sup><br></td>
+                <td class="align-middle">43.85</td>
+                <td class="align-middle">37.71</td>
+                <td class="align-middle">22.19</td>
+                <td class="align-middle">65.90</td>
+                <td class="align-middle">47.45</td>
+                <td class="align-middle">50.04</td>
+                <td class="align-middle">42.13</td>
+                <td class="align-middle">34.96</td>
+                </tr>
+                <tr>
+                <td class="align-middle">11<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">RNN SPARQL<sup><span class="badge badge-success">SPARQL</span></sup><br></td>
+                <td class="align-middle">41.98</td>
+                <td class="align-middle">36.01</td>
+                <td class="align-middle">19.04</td>
+                <td class="align-middle">66.98</td>
+                <td class="align-middle">37.74</td>
+                <td class="align-middle">50.26</td>
+                <td class="align-middle">58.84</td>
+                <td class="align-middle">26.08</td>
+                </tr>
+                <tr>
+                <td class="align-middle">12<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">RGCN<sup></sup><br><a href="https://arxiv.org/abs/1703.06103" class="paper-link">[ESWC18]</a></td>
+                <td class="align-middle">35.07</td>
+                <td class="align-middle">34.00</td>
+                <td class="align-middle">27.61</td>
+                <td class="align-middle">30.03</td>
+                <td class="align-middle">35.85</td>
+                <td class="align-middle">41.91</td>
+                <td class="align-middle">65.88</td>
+                <td class="align-middle">0.00</td>
+                </tr>
+                <tr>
+                <td class="align-middle">13<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">Blind GRU<sup></sup><br></td>
+                <td class="align-middle">34.36</td>
+                <td class="align-middle">33.25</td>
+                <td class="align-middle">28.82</td>
+                <td class="align-middle">25.77</td>
+                <td class="align-middle">34.17</td>
+                <td class="align-middle">39.43</td>
+                <td class="align-middle">62.15</td>
+                <td class="align-middle">0.06</td>
+                </tr>
+                <tr>
+                <td class="align-middle">14<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">EmbedKGQA<sup></sup><br><a href="https://www.aclweb.org/anthology/2020.acl-main.412/" class="paper-link">[ACL20]</a><a href="https://github.com/malllabiisc/EmbedKGQA" class="paper-link">[code]</a></td>
+                <td class="align-middle">28.36</td>
+                <td class="align-middle">26.41</td>
+                <td class="align-middle">25.20</td>
+                <td class="align-middle">11.93</td>
+                <td class="align-middle">23.95</td>
+                <td class="align-middle">32.88</td>
+                <td class="align-middle">61.05</td>
+                <td class="align-middle">0.06</td>
+                </tr>
+                <tr>
+                <td class="align-middle">15<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                <td class="align-middle">KVMemNet<sup></sup><br><a href="https://www.aclweb.org/anthology/D16-1147/" class="paper-link">[EMNLP16]</a></td>
+                <td class="align-middle">16.61</td>
+                <td class="align-middle">16.50</td>
+                <td class="align-middle">18.47</td>
+                <td class="align-middle">1.17</td>
+                <td class="align-middle">14.99</td>
+                <td class="align-middle">27.31</td>
+                <td class="align-middle">54.70</td>
+                <td class="align-middle">0.06</td>
+                </tr>
+
+
+
+
+
+
+
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row block-dark-table-head">
+      <div class="col-md-10 mx-auto">
+        Multiple-Choice Setting
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="card card-outline-secondary">
+          <div class="card-body">
+            <table class="table table-responsive leaderboard-table">
+              <colgroup>
+                <col class="col-rank" />
+                <col class="col-model" />
+                <col class="col-overall" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+                <col class="col-acc" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th rowspan="2" class="align-middle">Rank</th>
+                  <th rowspan="2" class="align-middle">Model</th>
+                  <th rowspan="2" class="align-middle">Overall</th>
+                  <th colspan="7">Details</th>
+                </tr>
+                <tr>
+                  <th class="detail-head">Multi-hop</th>
+                  <th class="detail-head">Qualifier</th>
+                  <th class="detail-head">Comparison</th>
+                  <th class="detail-head">Logical</th>
+                  <th class="detail-head">Count</th>
+                  <th class="detail-head">Verify</th>
+                  <th class="detail-head">Zero-shot</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle human">#</td>
+                  <td class="align-middle human">Human</td>
+                  <td class="align-middle human">97.50</td>
+                  <td class="align-middle human">97.24</td>
+                  <td class="align-middle human">95.65</td>
+                  <td class="align-middle human">100.00</td>
+                  <td class="align-middle human">98.18</td>
+                  <td class="align-middle human">83.33</td>
+                  <td class="align-middle human">95.24</td>
+                  <td class="align-middle human">100.00</td>
+                </tr>
+
+
+
+
+
+
+
+                <!-- start multiple-choice data -->
+                <tr>
+                  <td class="align-middle">1<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                  <td class="align-middle">RGCN<sup></sup><br><a href="https://arxiv.org/abs/1703.06103"
+                      class="paper-link">[ESWC18]</a></td>
+                  <td class="align-middle"><strong>53.75</strong></td>
+                  <td class="align-middle"><strong>51.70</strong></td>
+                  <td class="align-middle">58.24</td>
+                  <td class="align-middle"><strong>48.64</strong></td>
+                  <td class="align-middle"><strong>55.88</strong></td>
+                  <td class="align-middle"><strong>47.93</strong></td>
+                  <td class="align-middle"><strong>66.57</strong></td>
+                  <td class="align-middle">1.46</td>
+                </tr>
+                <tr>
+                  <td class="align-middle">2<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                  <td class="align-middle">Blind GRU<sup></sup><br></td>
+                  <td class="align-middle">53.23</td>
+                  <td class="align-middle">51.00</td>
+                  <td class="align-middle"><strong>58.88</strong></td>
+                  <td class="align-middle">47.85</td>
+                  <td class="align-middle">54.47</td>
+                  <td class="align-middle">45.82</td>
+                  <td class="align-middle">62.85</td>
+                  <td class="align-middle">1.65</td>
+                </tr>
+                <tr>
+                  <td class="align-middle">3<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                  <td class="align-middle">EmbedKGQA<sup></sup><br><a
+                      href="https://www.aclweb.org/anthology/2020.acl-main.412/" class="paper-link">[ACL20]</a><a
+                      href="https://github.com/malllabiisc/EmbedKGQA" class="paper-link">[code]</a></td>
+                  <td class="align-middle">45.19</td>
+                  <td class="align-middle">42.39</td>
+                  <td class="align-middle">54.66</td>
+                  <td class="align-middle">23.01</td>
+                  <td class="align-middle">42.36</td>
+                  <td class="align-middle">36.34</td>
+                  <td class="align-middle">61.95</td>
+                  <td class="align-middle"><strong>8.88</strong></td>
+                </tr>
+                <tr>
+                  <td class="align-middle">4<br><span class="badge badge-secondary">21-Oct-20</span></td>
+                  <td class="align-middle">KVMemNet<sup></sup><br><a href="https://www.aclweb.org/anthology/D16-1147/"
+                      class="paper-link">[EMNLP16]</a></td>
+                  <td class="align-middle">39.15</td>
+                  <td class="align-middle">36.78</td>
+                  <td class="align-middle">50.09</td>
+                  <td class="align-middle">18.71</td>
+                  <td class="align-middle">38.61</td>
+                  <td class="align-middle">34.69</td>
+                  <td class="align-middle">56.08</td>
+                  <td class="align-middle">6.73</td>
+                </tr>
+                <!-- end multiple-choice data -->
+
+
+
+
+
+
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <!--             <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li> -->
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; THUKEG 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

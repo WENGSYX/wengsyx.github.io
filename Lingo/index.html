@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Jiaxin Shi">
+
+  <title>KQA Pro Homepage</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/2.1.0/joint.css" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <style>
+    .btn-purple {
+      color: rgb(255, 255, 255);
+      background-color: rgb(126, 86, 237);
+      border-color: rgb(126, 86, 237);
+    }
+
+    .btn-purple:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(100, 70, 210);
+      border-color: rgb(90, 60, 175);
+    }
+
+    .btn-purple:focus,
+    .btn-purple.focus {
+      color: rgb(255, 255, 255);
+      background-color: rgb(100, 70, 210);
+      border-color: rgb(90, 60, 175);
+      box-shadow: 0 0 0 0.2rem rgba(90, 60, 175, 0.5);
+    }
+
+    .btn-purple.disabled,
+    .btn-purple:disabled {
+      color: rgb(255, 255, 255);
+      background-color: rgb(126, 86, 237);
+      border-color: rgb(126, 86, 237);
+    }
+
+    .btn-purple:not(:disabled):not(.disabled):active,
+    .btn-purple:not(:disabled):not(.disabled).active,
+    .show>.btn-purple.dropdown-toggle {
+      color: rgb(255, 255, 255);
+      background-color: rgb(110, 70, 200);
+      border-color: rgb(90, 60, 175);
+    }
+
+    .btn-purple:not(:disabled):not(.disabled):active:focus,
+    .btn-purple:not(:disabled):not(.disabled).active:focus,
+    .show>.btn-purple.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(90, 60, 175, 0.5);
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLKG3T9QJ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QLKG3T9QJ2');
+  </script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KQA Pro</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://arxiv.org/abs/2007.03875">Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demo.html">Demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/主页.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>KQA Pro</h1>
+            <span class="subheading">A Large-Scale, Diverse, Challenging Dataset of Complex Question Answering over
+              Knowledge Base</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+    <div class="row block-light">
+      <div class="col-md-4 auto-vertical-center">
+        <h1>What is KQA Pro</h1>
+      </div>
+      <div class="col-md-8">
+        <p>KQA Pro is a large-scale dataset of complex question answering over knowledge base. The questions are very
+          diverse and challenging, requiring multiple reasoning capabilities including compositional reasoning,
+          multi-hop reasoning, quantitative comparison, set operations, and etc. Strong supervisions of SPARQL and
+          program are provided for each question. </p>
+      </div>
+    </div>
+
+    <div class="row block-dark">
+      <div class="col-md-6 mx-auto auto-vertical-center">
+        The target knowledge base of KQA Pro is a dense subset of <a
+          href="https://www.wikidata.org/wiki/Wikidata:Main_Page" style="color:yellow;">Wikidata</a>.
+        Questions are split into training/validation/test set, including 94,376/11,797/11,797 respectively.
+      </div>
+      <div class="col-md-4 auto-vertical-center">
+        <a class="btn btn-purple btn-lg btn-block" style="font-size:30px;"
+          href="https://cloud.tsinghua.edu.cn/f/df54ff66d1dc4ca7823e/?dl=1">Download</a>
+        <!-- <a href="#"><button type="button" class="btn btn-success btn-lg btn-block" style="font-size:30px">Download</button></a> -->
+        <p style="font-size:20px;margin:0px;font-family:'Times New Roman'">[version 1.0 / size 25MB]</p>
+      </div>
+    </div>
+
+    <div class="row block-light">
+      <div class="col-md-4 auto-vertical-center">
+        <a href="https://github.com/shijx12/KQAPro_Baselines" class="btn btn-purple btn-lg btn-block"
+          style="font-size:30px">Quick Start</a>
+      </div>
+      <div class="col-md-6 mx-auto">
+        We implement several baselines and release them in our Github repository. Have a quick start on KQA Pro by
+        trying out them!
+      </div>
+    </div>
+
+    <div class="row block-dark">
+      <div class="col-md-10">
+        <pre>
+@inproceedings{KQAPro,
+  title={{KQA P}ro: A Large Diagnostic Dataset for Complex Question Answering over Knowledge Base},
+  author={Cao, Shulin and Shi, Jiaxin and Pan, Liangming and Nie, Lunyiu and Xiang, Yutong and Hou, Lei and Li, Juanzi and He, Bin and Zhang, Hanwang},
+  booktitle={ACL'22},
+  year={2022}
+}</pre>
+      </div>
+      <div class="col-md-2 auto-vertical-center">
+        <h1>Citation</h1>
+      </div>
+    </div>
+
+    <div class="row block-light">
+      <div class="col-md-8 mx-auto">
+        <h3>Question:</h3>
+        <div id="question"> </div><br>
+        <h3>Program:</h3><canvas id='program'> </canvas>
+        <!-- <h3>SPARQL:</h3><pre id="sparql" style="display: inline"> </pre><br> -->
+        <h3>SPARQL:</h3>
+        <pre id="sparql" class="code-center"> </pre><br>
+        <h3>Choices:</h3>
+        <div id="choices" style="font-size:17px;"></div><br>
+        <h3>Answer:</h3>
+        <div id="answer"></div><br>
+      </div>
+      <div class="col-md-10 mx-auto">
+        <button id="pause" type="button" class="btn btn-purple btn-info" style="float: right;">Pause</button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <!--             <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li> -->
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; THUKEG 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+  <script src="js/nomnoml.min.js"></script>
+
+  <script type="text/javascript">
+
+    function f_i(f, i) {
+      return f + '-' + i;
+    }
+
+    function split_sparql(sparql) {
+      var space = '    ';
+      var clauses = [];
+      var cur_dep = 0;
+      for (var i = 0, j = 1; j < sparql.length - 1; j++) {
+        var c = sparql.charAt(j)
+        switch (c) {
+          case '.':
+            if (sparql.charAt(j - 1) == ' ' && sparql.charAt(j + 1) == ' ') {
+              clauses.push(space.repeat(cur_dep) + sparql.substr(i, j - i + 1).trim());
+              i = j + 1;
+            }
+            break
+          case '{':
+            if (sparql.charAt(j - 1) == ' ' && sparql.charAt(j + 1) == ' ') {
+              clauses.push(space.repeat(cur_dep) + sparql.substr(i, j - i).trim());
+              clauses.push(space.repeat(cur_dep) + '{');
+              i = j + 1;
+              cur_dep++;
+            }
+            break
+          case '}':
+            if (sparql.charAt(j - 1) == ' ' && sparql.charAt(j + 1) == ' ') {
+              cur_dep--;
+              clauses.push(space.repeat(cur_dep) + '}');
+              i = j + 1;
+            }
+            break
+          default:
+            break
+        }
+      }
+      if (j > i) clauses.push(sparql.substr(i, j - i + 1).trim());
+      clauses = clauses.filter(w => w.trim().length > 0);
+      var new_sparql = clauses.join('<br>');
+      return new_sparql;
+    }
+
+    function show_instance(json, idx) {
+      var desc = [];
+      var program = json[idx]['program'];
+      program.forEach((f, i) => {
+        desc.push('[' + f_i(f['function'], i) + (f['inputs'].length > 0 ? ('|' + f['inputs'].join(';')) : '') + ']');
+        f['dependencies'].forEach(j => {
+          desc.push('[' + f_i(program[j]['function'], j) + ']->[' + f_i(f['function'], i) + ']');
+        })
+      })
+      var source = desc.join(';\n');
+      var conf = '#direction: right\n#fill: #8fd3e8\n';
+      nomnoml.draw(document.getElementById('program'), conf + source);
+
+      document.getElementById('question').innerHTML = json[idx]['question'];
+      var sparql = ' ' + json[idx]['sparql'].replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;') + ' ';
+      document.getElementById('sparql').innerHTML = split_sparql(sparql);
+
+      var t = '';
+      json[idx]['choices'].forEach(c => {
+        t += '&bull;  ' + c + '<br>';
+      })
+      document.getElementById('choices').innerHTML = t;
+      document.getElementById('answer').innerHTML = json[idx]['answer'];
+    }
+
+    var timerInterval = null;
+    $.getJSON("sample200.json", function (json) {
+      show_instance(json, Math.floor(Math.random() * json.length));
+      timerInterval = setInterval(() => {
+        show_instance(json, Math.floor(Math.random() * json.length));
+      }, 5000);
+
+      var isPause = false;
+      $("#pause").on("click", () => {
+        if (isPause) {
+          document.getElementById("pause").innerHTML = "Pause";
+          show_instance(json, Math.floor(Math.random() * json.length));
+          timerInterval = setInterval(() => {
+            show_instance(json, Math.floor(Math.random() * json.length));
+          }, 5000);
+          isPause = false;
+        } else {
+          document.getElementById("pause").innerHTML = "Continue";
+          if (timerInterval) clearInterval(timerInterval);
+          isPause = true;
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+model name,submit date,affliation,setting,use_sparql,use_program,ensemble,paper link,conference,code link,overall,multihop,qualifier,comparison,logical,count,verify,zeroshot
+Blind GRU,21-Oct-20,,open,FALSE,FALSE,FALSE,,,,34.36,33.25,28.82,25.77,34.17,39.43,62.15,0.06
+Blind GRU,21-Oct-20,,multi,FALSE,FALSE,FALSE,,,,53.23,51,58.88,47.85,54.47,45.82,62.85,1.65
+KVMemNet,21-Oct-20,,open,FALSE,FALSE,FALSE,https://www.aclweb.org/anthology/D16-1147/,EMNLP16,,16.61,16.5,18.47,1.17,14.99,27.31,54.7,0.06
+KVMemNet,21-Oct-20,,multi,FALSE,FALSE,FALSE,https://www.aclweb.org/anthology/D16-1147/,EMNLP16,,39.15,36.78,50.09,18.71,38.61,34.69,56.08,6.73
+EmbedKGQA,21-Oct-20,,open,FALSE,FALSE,FALSE,https://www.aclweb.org/anthology/2020.acl-main.412/,ACL20,https://github.com/malllabiisc/EmbedKGQA,28.36,26.41,25.2,11.93,23.95,32.88,61.05,0.06
+EmbedKGQA,21-Oct-20,,multi,FALSE,FALSE,FALSE,https://www.aclweb.org/anthology/2020.acl-main.412/,ACL20,https://github.com/malllabiisc/EmbedKGQA,45.19,42.39,54.66,23.01,42.36,36.34,61.95,8.88
+RGCN,21-Oct-20,,open,FALSE,FALSE,FALSE,https://arxiv.org/abs/1703.06103,ESWC18,,35.07,34,27.61,30.03,35.85,41.91,65.88,0
+RGCN,21-Oct-20,,multi,FALSE,FALSE,FALSE,https://arxiv.org/abs/1703.06103,ESWC18,,53.75,51.7,58.24,48.64,55.88,47.93,66.57,1.46
+RNN SPARQL,21-Oct-20,,open,TRUE,FALSE,FALSE,,,,41.98,36.01,19.04,66.98,37.74,50.26,58.84,26.08
+RNN Program,21-Oct-20,,open,FALSE,TRUE,FALSE,,,,43.85,37.71,22.19,65.9,47.45,50.04,42.13,34.96
+BART SPARQL,21-Oct-20,,open,TRUE,FALSE,FALSE,https://arxiv.org/abs/1910.13461,,https://github.com/huggingface/transformers,89.68,88.49,83.09,96.12,88.67,85.78,92.33,87.88
+BART Program,21-Oct-20,,open,FALSE,TRUE,FALSE,https://arxiv.org/abs/1910.13461,,https://github.com/huggingface/transformers,87.17,85.57,80.57,93.83,86.33,84.20,84.94,86.29
