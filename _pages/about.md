@@ -59,7 +59,7 @@ My passion lies in the captivating world of natural language processing, where I
 
 **Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao
 
-[**Project** ↗](https://github.com/WENGSYX/HoT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/WENGSYX/HoT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We propose a holistic thinking approach for improving the performance of large language models in both Chinese and English medical conversational QA task.
 
 </div>
@@ -73,7 +73,7 @@ My passion lies in the captivating world of natural language processing, where I
 
 **Yixuan Weng**, Bin Li
 
-[**Project** ↗](https://github.com/WENGSYX/MutualSL) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/WENGSYX/MutualSL) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We introduce a cross-modal mutual knowledge transfer approach for localizing visual answers in images and videos.
 
 </div>
@@ -87,7 +87,7 @@ My passion lies in the captivating world of natural language processing, where I
 
 Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li
 
-[**Project** ↗](https://github.com/WENGSYX/CCGS) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/WENGSYX/CCGS) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We propose a novel approach to locate visual answers in a video corpus using a question.
 
 </div>
@@ -101,7 +101,7 @@ Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li
 
 Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao
 
-<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+**Project** <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We propose ReliAble Path-retrieval (RAP) for complex QA over knowledge graphs, which iteratively retrieves multi-hop reasoning chains. It models chains comprehensively and introduces losses from two views. Experiments show state-of-the-art performance on evidence retrieval and QA. Additional results demonstrate the importance of modeling sequence information for evidence chains.
 
 </div>
@@ -115,7 +115,7 @@ Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zha
 
 Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
 
-[**Project** ↗](https://github.com/WENGSYX/ATTEMPT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/WENGSYX/ATTEMPT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Proposed two-stage ATTEMPT method for taxonomy completion. Inserts new concepts by finding parent and labeling children. Combines local nodes with prompts for natural sentences. Utilizes pre-trained language models for hypernym/hyponym recognition. Outperforms existing methods on taxonomy completion and extension tasks.
 
 </div>
@@ -129,9 +129,9 @@ Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
 
 Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao
 
-[**Project** ↗](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We propose MedConQA, a medical conversational QA system using knowledge graphs, to address weak scalability, insufficient knowledge, and poor controllability in existing systems. It is a pipeline framework with open-sourced modular tools for flexibility. We construct a Chinese Medical Knowledge Graph and a Chinese Medical CQA dataset to enable knowledge-grounded dialogues. We also use SoTA techniques to keep responses controllable, as validated through professional evaluations. Code, data, and tools are open-sourced to advance research.
-[**Demo** ↗](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Demo**](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 </div>
 </div>
