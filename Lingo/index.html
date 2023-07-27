@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Jiaxin Shi">
 
-  <title>KQA Pro Homepage</title>
+  <title>Lingo Homepage</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/2.1.0/joint.css" />
 
@@ -96,10 +96,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="explore.html">Explore</a>
+            <a class="nav-link" href="https://github.com/WENGSYX/Lingo">Code</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://arxiv.org/abs/2007.03875">Paper</a>
@@ -119,9 +116,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>KQA Pro</h1>
-            <span class="subheading">A Large-Scale, Diverse, Challenging Dataset of Complex Question Answering over
-              Knowledge Base</span>
+            <h1>Lingo</h1>
+            <span class="subheading">No More Complications, Effortless LLM Training with Lingo</span>
           </div>
         </div>
       </div>
@@ -133,21 +129,20 @@
   <div class="container-fluid">
     <div class="row block-light">
       <div class="col-md-4 auto-vertical-center">
-        <h1>What is KQA Pro</h1>
+        <h1>What is Lingo?</h1>
       </div>
       <div class="col-md-8">
-        <p>KQA Pro is a large-scale dataset of complex question answering over knowledge base. The questions are very
-          diverse and challenging, requiring multiple reasoning capabilities including compositional reasoning,
-          multi-hop reasoning, quantitative comparison, set operations, and etc. Strong supervisions of SPARQL and
-          program are provided for each question. </p>
+        <p>Lingo is an open-source system that enables easy and efficient training of large language models (LLMs) through a simple command-line interface, without requiring any coding experience. The key goal of Lingo is to make LLM training more accessible by abstracting away unnecessary complexity.</p>
+
+        <p>At the core, Lingo comprises three main modules - Interaction, Training, and Inference. The Interaction Module provides an AI assistant that guides users through natural conversation to determine optimal parameters and training configurations. This eliminates the need for manual hyperparameter tuning. The Training Module then takes these parameters and manages the full training process automatically using state-of-the-art techniques integrated in a modular fashion. For example, Lingo incorporates model parallelism, quantization, parameters and space efficient fine-tuning, ZeRO optimization, and more. The Inference Module loads the final trained model and enables efficient deployment for downstream tasks.</p>
+
+        <p>A major advantage of Lingo is its high level of modularity and extensibility. New models, datasets, and techniques can be easily integrated due to its flexible architecture. Lingo supports training diverse model sizes from 300 million parameters to over 100 billion parameters. The open source release under an Apache 2.0 license further enables community-driven development and sharing of innovations.</p>
       </div>
     </div>
 
     <div class="row block-dark">
       <div class="col-md-6 mx-auto auto-vertical-center">
-        The target knowledge base of KQA Pro is a dense subset of <a
-          href="https://www.wikidata.org/wiki/Wikidata:Main_Page" style="color:yellow;">Wikidata</a>.
-        Questions are split into training/validation/test set, including 94,376/11,797/11,797 respectively.
+        We released the latest version of Lingo on Github.
       </div>
       <div class="col-md-4 auto-vertical-center">
         <a class="btn btn-purple btn-lg btn-block" style="font-size:30px;"
@@ -163,8 +158,10 @@
           style="font-size:30px">Quick Start</a>
       </div>
       <div class="col-md-6 mx-auto">
-        We implement several baselines and release them in our Github repository. Have a quick start on KQA Pro by
-        trying out them!
+    <pre>
+from lingo import Let_Lingo </br>
+      Let_Lingo()
+    </pre>
       </div>
     </div>
 
