@@ -23,8 +23,8 @@ My research interest includes neural machine translation and computer vision. I 
 
 
 # 🔥 News
-- *2023.08*: &nbsp;🎉🎉 We've released Lingo, a groundbreaking system where anyone can train large models in just 5 minutes!
-- *2023.04*: &nbsp;🎉🎉 We've created Neural Comprehension - a breakthrough enabling LLMs to master symbolic operations!
+- *2023.08*: &nbsp;🎉🎉 We've released **Lingo**, a groundbreaking system where anyone can train large models in just 5 minutes!
+- *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations!
 
 # 📝 Publications 
 
@@ -41,10 +41,15 @@ My research interest includes neural machine translation and computer vision. I 
 </div>
 
 - Large Language Models are Better Reasoners with Self-Verification, **Yixuan Weng**, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Kang Liu, Jun Zhao, **Arxiv**, [[PDF]](https://arxiv.org/abs/2212.09561), [[CODE]](https://github.com/WENGSYX/Self-Verification), [[DEMO]](https://www.bilibili.com/video/BV1as4y1F74k/)
+- Large Language Models Need Holistically Thought in Medical Conversational QA, **Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao, **Arxiv**, [[PDF]](https://arxiv.org/abs/2305.05410), [[CODE]](https://github.com/WENGSYX/HoT)
+- Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer, **Yixuan Weng**, Bin Li, **ICASSP 2023, Oral**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10095026/authors), [[CODE]](https://github.com/WENGSYX/MutualSL)
+- Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model, Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao, **EACL 2023, Poster**, [[PDF]](https://aclanthology.org/2023.eacl-main.73/), [[CODE]](https://github.com/WENGSYX/ATTEMPT)
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2022.05* BioNLP-2022:   Medical Video Classification, **First Place**
+- *2022.01* SemEval22-Task3 PreTENS, **First Place**
+- *2021.11* SDU@AAAI-22:  Acronym Disambiguation, **First Place**
+
 
 # 💻 Internships
 - *2022.09 - *, CASIA, China.
