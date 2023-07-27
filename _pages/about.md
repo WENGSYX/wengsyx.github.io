@@ -38,13 +38,103 @@ My passion lies in the captivating world of natural language processing, where I
 </div>
 </div>
 
-- Large Language Models are Better Reasoners with Self-Verification| **Yixuan Weng**, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Kang Liu, Jun Zhao, **Arxiv**, [[PDF]](https://arxiv.org/abs/2212.09561), [[CODE]](https://github.com/WENGSYX/Self-Verification), [[DEMO]](https://www.bilibili.com/video/BV1as4y1F74k/)
-- Large Language Models Need Holistically Thought in Medical Conversational QA| **Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao, **Arxiv**, [[PDF]](https://arxiv.org/abs/2305.05410), [[CODE]](https://github.com/WENGSYX/HoT)
-- Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer| **Yixuan Weng**, Bin Li, **ICASSP 2023 Oral**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10095026), [[CODE]](https://github.com/WENGSYX/MutualSL)
-- Learning To Locate Visual Answer In Video Corpus Using Question| Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li,  **ICASSP 2023 Poster**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10096391), [[CODE]](https://github.com/WENGSYX/CCGS)
-- Learning to Build Reasoning Chains by Reliable Path Retrieval| Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao,  **ICASSP 2023 Poster**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10097146)
-- Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model| Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao, **EACL 2023 Poster**, [[PDF]](https://aclanthology.org/2023.eacl-main.73/), [[CODE]](https://github.com/WENGSYX/ATTEMPT)
-- MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs| Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao, **EMNLP 2022 Demo**, [[PDF]](https://aclanthology.org/2022.emnlp-demos.15/), [[CODE]](https://github.com/WENGSYX/LingYi), [[DEMO]](https://www.bilibili.com/video/BV1BP4y177r8/)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/SelfVer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Large Language Models are Better Reasoners with Self-Verification](https://arxiv.org/abs/2212.09561)
+
+**Yixuan Weng**, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Kang Liu, Jun Zhao
+
+[**Project**](https://github.com/WENGSYX/Self-Verification) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We have demonstrated that language models have the capability for self-verification, and can further improve their own reasoning abilities.
+[**Demo**](https://www.bilibili.com/video/BV1as4y1F74k/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/HoT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Large Language Models Need Holistically Thought in Medical Conversational QA ↗](https://arxiv.org/abs/2305.05410)
+
+**Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao
+
+[**Project** ↗](https://github.com/WENGSYX/HoT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose a holistic thinking approach for improving the performance of large language models in medical conversational question answering.
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Oral</div><img src='images/MutualSL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer ↗](https://ieeexplore.ieee.org/abstract/document/10095026)
+
+**Yixuan Weng**, Bin Li
+
+[**Project** ↗](https://github.com/WENGSYX/MutualSL) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We introduce a cross-modal mutual knowledge transfer approach for localizing visual answers in images and videos.
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/CCGS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning To Locate Visual Answer In Video Corpus Using Question ↗](https://ieeexplore.ieee.org/abstract/document/10096391)
+
+Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li
+
+[**Project** ↗](https://github.com/WENGSYX/CCGS) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose a novel approach to locate visual answers in a video corpus using a question.
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/ChainPath.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning to Build Reasoning Chains by Reliable Path Retrieval ↗](https://ieeexplore.ieee.org/abstract/document/10097146)
+
+Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao
+
+<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We present a method to build reasoning chains by retrieving reliable paths, enhancing the ability of language models to reason.
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EACL 2023 Poster</div><img src='images/ATTEMPT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model ↗](https://aclanthology.org/2023.eacl-main.73/)
+
+Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
+
+[**Project** ↗](https://github.com/WENGSYX/ATTEMPT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose a two-stage taxonomy completion method using a pre-trained language model, first finding the parent and then labeling the children.
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2022 Demo</div><img src='images/LingYi.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs ↗](https://aclanthology.org/2022.emnlp-demos.15/)
+
+Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao
+
+[**Project** ↗](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We developed MedConQA, a medical conversational question answering system based on knowledge graphs.
+[**Demo** ↗](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+
+</div>
+</div>
 
 
 # 🎖 Honors and Awards
@@ -54,4 +144,4 @@ My passion lies in the captivating world of natural language processing, where I
 
 
 # 💻 Internships
-- 2022.09 - , CASIA, China.
+- 2021.09 - , CASIA, China.
