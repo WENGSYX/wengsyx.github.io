@@ -17,9 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
-
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My passion lies in the captivating world of natural language processing, where I love delving into its intricacies and uncovering its hidden potential. An explorer at heart, I am captivated by the thrill of investigating novel concepts, while tedious, repetitive engineering tasks hold little allure for me.
 
 
 # 🔥 News
@@ -42,9 +40,12 @@ My research interest includes neural machine translation and computer vision. I 
 
 - Large Language Models are Better Reasoners with Self-Verification, **Yixuan Weng**, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Kang Liu, Jun Zhao, **Arxiv**, [[PDF]](https://arxiv.org/abs/2212.09561), [[CODE]](https://github.com/WENGSYX/Self-Verification), [[DEMO]](https://www.bilibili.com/video/BV1as4y1F74k/)
 - Large Language Models Need Holistically Thought in Medical Conversational QA, **Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao, **Arxiv**, [[PDF]](https://arxiv.org/abs/2305.05410), [[CODE]](https://github.com/WENGSYX/HoT)
-- Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer, **Yixuan Weng**, Bin Li, **ICASSP 2023, Oral**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10095026/authors), [[CODE]](https://github.com/WENGSYX/MutualSL)
-- Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model, Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao, **EACL 2023, Poster**, [[PDF]](https://aclanthology.org/2023.eacl-main.73/), [[CODE]](https://github.com/WENGSYX/ATTEMPT)
-
+- Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer, **Yixuan Weng**, Bin Li, **ICASSP 2023 Oral**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10095026), [[CODE]](https://github.com/WENGSYX/MutualSL)
+- Learning To Locate Visual Answer In Video Corpus Using Question, Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li,  **ICASSP 2023 Poster**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10096391), [[CODE]](https://github.com/WENGSYX/CCGS)
+- Learning to Build Reasoning Chains by Reliable Path Retrieval, Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao,  **ICASSP 2023 Poster**, [[PDF]](https://ieeexplore.ieee.org/abstract/document/10097146)
+- Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model, Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao, **EACL 2023 Poster**, [[PDF]](https://aclanthology.org/2023.eacl-main.73/), [[CODE]](https://github.com/WENGSYX/ATTEMPT)
+- MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs, Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao, **EMNLP 2022 Demo**, [[PDF]](https://aclanthology.org/2022.emnlp-demos.15/), [[CODE]](https://github.com/WENGSYX/LingYi), [[DEMO]](https://www.bilibili.com/video/BV1BP4y177r8/)
+- 
 # 🎖 Honors and Awards
 - *2022.05* BioNLP-2022:   Medical Video Classification, **First Place**
 - *2022.01* SemEval22-Task3 PreTENS, **First Place**
