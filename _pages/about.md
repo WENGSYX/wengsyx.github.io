@@ -55,12 +55,12 @@ My passion lies in the captivating world of natural language processing, where I
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/HoT.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Large Language Models Need Holistically Thought in Medical Conversational QA ↗](https://arxiv.org/abs/2305.05410)
+[Large Language Models Need Holistically Thought in Medical Conversational QA](https://arxiv.org/abs/2305.05410)
 
 **Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao
 
 [**Project** ↗](https://github.com/WENGSYX/HoT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We propose a holistic thinking approach for improving the performance of large language models in medical conversational question answering.
+- We propose a holistic thinking approach for improving the performance of large language models in both Chinese and English medical conversational QA task.
 
 </div>
 </div>
@@ -69,7 +69,7 @@ My passion lies in the captivating world of natural language processing, where I
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Oral</div><img src='images/MutualSL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer ↗](https://ieeexplore.ieee.org/abstract/document/10095026)
+[Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer](https://ieeexplore.ieee.org/abstract/document/10095026)
 
 **Yixuan Weng**, Bin Li
 
@@ -83,7 +83,7 @@ My passion lies in the captivating world of natural language processing, where I
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/CCGS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Learning To Locate Visual Answer In Video Corpus Using Question ↗](https://ieeexplore.ieee.org/abstract/document/10096391)
+[Learning To Locate Visual Answer In Video Corpus Using Question](https://ieeexplore.ieee.org/abstract/document/10096391)
 
 Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li
 
@@ -97,12 +97,12 @@ Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/ChainPath.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Learning to Build Reasoning Chains by Reliable Path Retrieval ↗](https://ieeexplore.ieee.org/abstract/document/10097146)
+[Learning to Build Reasoning Chains by Reliable Path Retrieval](https://ieeexplore.ieee.org/abstract/document/10097146)
 
 Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao
 
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We present a method to build reasoning chains by retrieving reliable paths, enhancing the ability of language models to reason.
+- We propose ReliAble Path-retrieval (RAP) for complex QA over knowledge graphs, which iteratively retrieves multi-hop reasoning chains. It models chains comprehensively and introduces losses from two views. Experiments show state-of-the-art performance on evidence retrieval and QA. Additional results demonstrate the importance of modeling sequence information for evidence chains.
 
 </div>
 </div>
@@ -111,12 +111,12 @@ Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zha
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EACL 2023 Poster</div><img src='images/ATTEMPT.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model ↗](https://aclanthology.org/2023.eacl-main.73/)
+[Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model](https://aclanthology.org/2023.eacl-main.73/)
 
 Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
 
 [**Project** ↗](https://github.com/WENGSYX/ATTEMPT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We propose a two-stage taxonomy completion method using a pre-trained language model, first finding the parent and then labeling the children.
+- Proposed two-stage ATTEMPT method for taxonomy completion. Inserts new concepts by finding parent and labeling children. Combines local nodes with prompts for natural sentences. Utilizes pre-trained language models for hypernym/hyponym recognition. Outperforms existing methods on taxonomy completion and extension tasks.
 
 </div>
 </div>
@@ -125,12 +125,12 @@ Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2022 Demo</div><img src='images/LingYi.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs ↗](https://aclanthology.org/2022.emnlp-demos.15/)
+[MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs](https://aclanthology.org/2022.emnlp-demos.15/)
 
 Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao
 
 [**Project** ↗](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We developed MedConQA, a medical conversational question answering system based on knowledge graphs.
+- We propose MedConQA, a medical conversational QA system using knowledge graphs, to address weak scalability, insufficient knowledge, and poor controllability in existing systems. It is a pipeline framework with open-sourced modular tools for flexibility. We construct a Chinese Medical Knowledge Graph and a Chinese Medical CQA dataset to enable knowledge-grounded dialogues. We also use SoTA techniques to keep responses controllable, as validated through professional evaluations. Code, data, and tools are open-sourced to advance research.
 [**Demo** ↗](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 </div>
