@@ -90,12 +90,12 @@
   <div class="container-fluid">
     <div class="block-light">
       <div class="row">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-8 mx-auto">
           <h1>How to Install the Required Environment for Lingo from Scratch on a Server</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+        <div class="col-md-7 mx-auto" style="text-align: left; font-size: 15px;">
 
           <h5>Install GPU Driver</h5>
 
@@ -110,7 +110,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+        <div class="col-md-7 mx-auto" style="text-align: left; font-size: 15px;">
 
           <h5>Install Conda and Python</h5>
 
@@ -125,7 +125,7 @@
         </div>      </div>
 
       <div class="row">
-        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+        <div class="col-md-7 mx-auto" style="text-align: left; font-size: 15px;">
 
           <h5>Install Python Libraries</h5>
 
@@ -139,7 +139,7 @@
 
 
         <div class="row">
-        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+        <div class="col-md-7 mx-auto" style="text-align: left; font-size: 15px;">
 
           <p>If you have ensured installing the correct GCC library (>5.0.0), you can continue installing apex and deepspeed:</p>
           <pre><code class="language-bash">
@@ -153,7 +153,7 @@
 
 
             <div class="row">
-        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+        <div class="col-md-7 mx-auto" style="text-align: left; font-size: 15px;">
 
           <h5>Install Lingo</h5>
 
@@ -171,8 +171,6 @@
 
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h3>QA:</h3>
-          <hr><br>
           <h3>Error in Apex installation :</h3>
           <pre id="pred_sparql" class="code-center"> </pre>
           <b id='pred_result_by_sparql'></b>
@@ -183,6 +181,25 @@
           <li>subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.: modify the cpp file in torch to ninja -V</li>
           <li>g++: error: /home/wengyixuan/apex/build/temp.linux-x86_64-cpython-39/csrc/fused_dense.o: No such file or directory: Give up, incompatible, either the torch environment or the pytorch environment or the apex environment is wrong. It is recommended to change to other versions, such as python=3.8, torch==1.7/1.8 or historical versions of apex (because newer versions may be updated in the future)</li>
           </ol>
+        </div>
+      </div>
+
+        <br><hr>
+
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h3>Common Issues</h3>
+          <pre id="pred_sparql" class="code-center"> </pre>
+          <b id='pred_result_by_sparql'></b>
+<ol>
+<li>OOM (out of memory): Reduce batch size, use gradient accumulation or adjust model parameters.</li>
+<li>Gradient explosion/vanishing: Use gradient clipping, adjust learning rate properly.</li>
+<li>Overfitting: Consider more regularization (e.g. L2 regularization, dropout etc), use larger dataset.</li>
+<li>Low GPU utilization: Check data loading and batch sizes, avoid small batches.</li>
+<li>Mixed precision training issues: Ensure mixed precision enabled, check numerical stability, use gradient scaling.</li>
+<li>Network communication bottleneck: Optimize data loading, use dedicated libs (like NCCL) and high-speed interconnects.</li>
+<li>For other issues, feel free to ask GPT-4 anytime.</li>
+</ol>
         </div>
       </div>
 
