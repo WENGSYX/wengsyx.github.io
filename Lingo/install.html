@@ -117,14 +117,15 @@
       <div class="row">
         <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
 
-          <h5>Install GPU Driver</h5>
+          <h5>Install Conda and Python</h5>
 
           <pre><code class="language-bash">
-          # preparing environment
-          sudo apt-get install gcc
-          sudo apt-get install make
-          wget https://developer.download.nvidia.com/compute/cuda/11.5.1/local_installers/cuda_11.5.1_495.29.05_linux.run
-          sudo sh cuda_11.5.1_495.29.05_linux.run
+            wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+            sudo chmod 777 Miniconda3-latest-Linux-x86_64.sh
+            bash Miniconda3-latest-Linux-x86_64.sh
+
+            conda create -n Lingo python==3.9
+            conda activate Lingo
           </code></pre>
         </div>
 
