@@ -199,11 +199,11 @@
 <li>Low GPU utilization: Check data loading and batch sizes, avoid small batches.</li>
 <li>Mixed precision training issues: Ensure mixed precision enabled, check numerical stability, use gradient scaling.</li>
 <li>Network communication bottleneck: Optimize data loading, use dedicated libs (like NCCL) and high-speed interconnects.</li>
-<li>For other issues, feel free to ask GPT-4 anytime.</li>
+<li>Unable to Use Single Node Multi-GPU: May be due to p2p transmission, set NCCL_P2P_DISABLE = 1</li>
+  <li>Learning Rate is 0 During Training: May be gradient vanishing, remember to check model, optimizer, etc. And use Gaussian initialization for weights.</li>
 </ol>
         </div>
       </div>
-
 
   <hr>
 
