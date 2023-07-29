@@ -162,18 +162,6 @@
         </div>
 
 
-      <br>
-
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h3>Predicted Program:</h3><canvas id='pred_program'> </canvas><br>
-          <b id='pred_result_by_program'></b>
-          <hr><br>
-          <h3>Predicted SPARQL:</h3>
-          <pre id="pred_sparql" class="code-center"> </pre>
-          <b id='pred_result_by_sparql'></b>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -210,7 +198,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; THUKEG 2020</p>
+          <p class="copyright text-muted">Copyright &copy; WENGSYX 2023</p>
         </div>
       </div>
     </div>
@@ -226,98 +214,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
   <script src="js/nomnoml.js"></script>
 
-  <script type="text/javascript">
-
-    function f_i(f, i) {
-      return f + '-' + i;
-    }
-
-    function split_sparql(sparql) {
-      var space = '    ';
-      var clauses = [];
-      var cur_dep = 0;
-      for (var i = 0, j = 1; j < sparql.length - 1; j++) {
-        var c = sparql.charAt(j)
-        switch (c) {
-          case '.':
-            if (sparql.charAt(j - 1) == ' ' && sparql.charAt(j + 1) == ' ') {
-              clauses.push(space.repeat(cur_dep) + sparql.substr(i, j - i + 1).trim());
-              i = j + 1;
-            }
-            break
-          case '{':
-            if (sparql.charAt(j - 1) == ' ' && sparql.charAt(j + 1) == ' ') {
-              clauses.push(space.repeat(cur_dep) + sparql.substr(i, j - i).trim());
-              clauses.push(space.repeat(cur_dep) + '{');
-              i = j + 1;
-              cur_dep++;
-            }
-            break
-          case '}':
-            if (sparql.charAt(j - 1) == ' ' && sparql.charAt(j + 1) == ' ') {
-              cur_dep--;
-              clauses.push(space.repeat(cur_dep) + '}');
-              i = j + 1;
-            }
-            break
-          default:
-            break
-        }
-      }
-      if (j > i) clauses.push(sparql.substr(i, j - i + 1).trim());
-      clauses = clauses.filter(w => w.trim().length > 0);
-      var new_sparql = clauses.join('<br>');
-      return new_sparql;
-    }
-
-    $("#parse").on("click", () => {
-
-      document.getElementById("parse").innerHTML = "Parsing...";
-      $('#parse').prop('disabled', true);
-
-      var question = $("#inputQuestion").val();
-      console.log(question);
-
-      $.ajax({
-        url: "http://166.111.68.66:6060/",  // server url
-        data: { 'question': question },
-        type: 'POST',
-        success: function (resp) {
-          var program = resp['program'];
-          var sparql = resp['sparql'];
-          var program_result = resp['program_result'];
-          var sparql_result = resp['sparql_result'];
-
-          // display program
-          var desc = [];
-          program.forEach((f, i) => {
-            desc.push('[' + f_i(f['func'], i) + (f['inputs'].length > 0 ? ('|' + f['inputs'].join(';')) : '') + ']');
-            f['dep'].forEach(j => {
-              if (j >= 0) desc.push('[' + f_i(program[j]['func'], j) + ']->[' + f_i(f['func'], i) + ']');
-            })
-          })
-          var source = desc.join(';\n');
-          var conf = '#direction: right\n#fill: #8fd3e8\n';
-          nomnoml.draw(document.getElementById('pred_program'), conf + source);
-
-          // display sparql
-          var sparql = sparql.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
-          document.getElementById('pred_sparql').innerHTML = split_sparql(sparql);
-
-          document.getElementById('pred_result_by_program').innerHTML = 'Answer: ' + program_result;
-          document.getElementById('pred_result_by_sparql').innerHTML = 'Answer: ' + sparql_result;
-        },
-        error: function (o, status, error) {
-          console.log('Error: ' + error);
-        },
-        complete: function () {
-          document.getElementById("parse").innerHTML = "Parse";
-          $('#parse').prop('disabled', false);
-        }
-      });
-    });
-
-  </script>
 </body>
 
 </html>
