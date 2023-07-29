@@ -171,12 +171,18 @@
 
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h3>QA:</h3><canvas id='pred_program'> </canvas><br>
-          <b id='pred_result_by_program'></b>
+          <h3>QA:</h3>
           <hr><br>
-          <h3>Predicted SPARQL:</h3>
+          <h3>Error in Apex installation :</h3>
           <pre id="pred_sparql" class="code-center"> </pre>
           <b id='pred_result_by_sparql'></b>
+          <ol>
+          <li>If prompted "Pytorch binaries were compiled with Cuda“, it means the PyTorch version may not match cuda, but this will not affect the installation of apex, so replace line 32 of the apex setup.py file "if (bare_metal_version != torch_binary_version):" with "if 0:"</li>
+          <li>No module named 'packaging': pip install packaging</li>
+          <li>ninja: build stopped: subcommand failed.: pip install ninja</li>
+          <li>subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.: modify the cpp file in torch to ninja -V</li>
+          <li>g++: error: /home/wengyixuan/apex/build/temp.linux-x86_64-cpython-39/csrc/fused_dense.o: No such file or directory: Give up, incompatible, either the torch environment or the pytorch environment or the apex environment is wrong. It is recommended to change to other versions, such as python=3.8, torch==1.7/1.8 or historical versions of apex (because newer versions may be updated in the future)</li>
+          </ol>
         </div>
       </div>
 
