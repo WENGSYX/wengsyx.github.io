@@ -110,11 +110,6 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6 mx-auto">
-          <h1>How to Install the Required Environment for Lingo from Scratch on a Server</h1>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
 
           <h5>Install Conda and Python</h5>
@@ -126,6 +121,43 @@
 
             conda create -n Lingo python==3.9
             conda activate Lingo
+          </code></pre>
+        </div>
+
+      <div class="row">
+        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+
+          <h5>Install Python Libraries</h5>
+
+          <pre><code class="language-bash">
+            pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
+            pip install tqdm transformers sklearn pandas numpy accelerate sentencepiece wandb SwissArmyTransformer jieba rouge_chinese datasets
+
+          </code></pre>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+
+          <h5>Install Python Libraries</h5>
+
+          <pre><code class="language-bash">
+            pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
+            pip install tqdm transformers sklearn pandas numpy accelerate sentencepiece wandb SwissArmyTransformer jieba rouge_chinese datasets
+
+          </code></pre>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6 mx-auto" style="text-align: left; font-size: 15px;">
+
+          <h5>Install Python Libraries</h5>
+          <p>If you have ensured installing the correct GCC library (>5.0.0), you can continue installing apex and deepspeed:</p>
+          <pre><code class="language-bash">
+            git clone https://github.com/NVIDIA/apex
+            cd apex
+            pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+            pip install deepspeed
           </code></pre>
         </div>
 
