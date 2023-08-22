@@ -26,7 +26,7 @@ My passion lies in the captivating world of natural language processing, where I
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/NeuralCom.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/LMTuner.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LMTuner: An user-friendly and highly-integrable Training Framework for fine-tuning Large Language Models](https://arxiv.org/abs/2308.10252)
@@ -36,7 +36,8 @@ My passion lies in the captivating world of natural language processing, where I
 [**Project**](https://github.com/WENGSYX/LMTuner) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We advocate that LMTuner's usability and integrality alleviate the complexities in training large language models. Remarkably, even a novice user could commence training large language models within five minutes. Furthermore, it integrates DeepSpeed frameworks and supports Efficient Fine-Tuning methodologies like Low Rank Adaptation (LoRA), Quantized LoRA (QLoRA), etc.,
 
-[**Video**](https://www.bilibili.com/video/BV1iN411a7fJ) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Demo Video**](https://www.bilibili.com/video/BV1iN411a7fJ) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Homepage**](https://wengsyx.github.io/LMTuner) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
 </div>
 
@@ -63,7 +64,7 @@ My passion lies in the captivating world of natural language processing, where I
 [**Project**](https://github.com/WENGSYX/Self-Verification) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We have demonstrated that language models have the capability for self-verification, and can further improve their own reasoning abilities.
 
-[**Demo**](https://www.bilibili.com/video/BV1as4y1F74k/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Demo Video**](https://www.bilibili.com/video/BV1as4y1F74k/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 </div>
 </div>
@@ -148,7 +149,7 @@ Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Z
 [**Project**](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We propose MedConQA, a medical conversational QA system using knowledge graphs, to address weak scalability, insufficient knowledge, and poor controllability in existing systems. It is a pipeline framework with open-sourced modular tools for flexibility. We construct a Chinese Medical Knowledge Graph and a Chinese Medical CQA dataset to enable knowledge-grounded dialogues. We also use SoTA techniques to keep responses controllable, as validated through professional evaluations. Code, data, and tools are open-sourced to advance research.
 
-[**Video**](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Demo Video**](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 </div>
 </div>
