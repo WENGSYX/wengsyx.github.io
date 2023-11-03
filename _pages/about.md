@@ -54,12 +54,12 @@ My passion lies in the captivating world of natural language processing, where I
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/SelfVer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2023 Findings</div><img src='images/SelfVer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Large Language Models are Better Reasoners with Self-Verification](https://arxiv.org/abs/2212.09561)
 
-**Yixuan Weng**, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Kang Liu, Jun Zhao
+**Yixuan Weng**, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Shengping Liu, Bin Sun, Kang Liu, Jun Zhao
 
 [**Project**](https://github.com/WENGSYX/Self-Verification) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We have demonstrated that language models have the capability for self-verification, and can further improve their own reasoning abilities.
