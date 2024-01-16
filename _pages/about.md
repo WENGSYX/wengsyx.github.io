@@ -21,7 +21,7 @@ My passion lies in the captivating world of natural language processing, where I
 
 
 # 🔥 News
-- *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** have accept in ICLR 2024 Poster!
+- *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** has accept in ICLR 2024 Poster!
 - *2023.08*: &nbsp;🎉🎉 We've released **LMTuner**, a groundbreaking system where anyone can train large models in just 5 minutes!
 - *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations! 
 
