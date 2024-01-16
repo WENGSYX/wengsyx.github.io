@@ -21,8 +21,9 @@ My passion lies in the captivating world of natural language processing, where I
 
 
 # 🔥 News
+- *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** have accept in ICLR 2024 Poster!
 - *2023.08*: &nbsp;🎉🎉 We've released **LMTuner**, a groundbreaking system where anyone can train large models in just 5 minutes!
-- *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations!
+- *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations! 
 
 # 📝 Publications 
 
@@ -42,7 +43,7 @@ My passion lies in the captivating world of natural language processing, where I
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/NeuralCom.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Poster</div><img src='images/NeuralCom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks](https://arxiv.org/abs/2304.01665)
