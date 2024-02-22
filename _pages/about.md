@@ -27,20 +27,6 @@ My passion lies in the captivating world of natural language processing, where I
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/LMTuner.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[LMTuner: An user-friendly and highly-integrable Training Framework for fine-tuning Large Language Models](https://arxiv.org/abs/2308.10252)
-
-**Yixuan Weng**, Zhiqi Wang, Huanxuan Liao, Shizhu He, Shengping Liu, Kang Liu, Jun Zhao
-
-[**Project**](https://github.com/WENGSYX/LMTuner) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We advocate that LMTuner's usability and integrality alleviate the complexities in training large language models. Remarkably, even a novice user could commence training large language models within five minutes. Furthermore, it integrates DeepSpeed frameworks and supports Efficient Fine-Tuning methodologies like Low Rank Adaptation (LoRA), Quantized LoRA (QLoRA), etc.,
-
-[**Demo Video**](https://www.bilibili.com/video/BV1iN411a7fJ) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-[**Homepage**](https://wengsyx.github.io/LMTuner) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-</div>
-</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Poster</div><img src='images/NeuralCom.png' alt="sym" width="100%"></div></div>
@@ -96,6 +82,22 @@ My passion lies in the captivating world of natural language processing, where I
 
 </div>
 </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/LMTuner.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LMTuner: An user-friendly and highly-integrable Training Framework for fine-tuning Large Language Models](https://arxiv.org/abs/2308.10252)
+
+**Yixuan Weng**, Zhiqi Wang, Huanxuan Liao, Shizhu He, Shengping Liu, Kang Liu, Jun Zhao
+
+[**Project**](https://github.com/WENGSYX/LMTuner) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We advocate that LMTuner's usability and integrality alleviate the complexities in training large language models. Remarkably, even a novice user could commence training large language models within five minutes. Furthermore, it integrates DeepSpeed frameworks and supports Efficient Fine-Tuning methodologies like Low Rank Adaptation (LoRA), Quantized LoRA (QLoRA), etc.,
+
+[**Demo Video**](https://www.bilibili.com/video/BV1iN411a7fJ) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Homepage**](https://wengsyx.github.io/LMTuner) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/CCGS.png' alt="sym" width="100%"></div></div>
