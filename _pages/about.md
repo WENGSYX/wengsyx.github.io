@@ -38,6 +38,8 @@ My passion lies in the captivating world of natural language processing, where I
 
 [**Project**](https://github.com/WENGSYX/Neural-Comprehension) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We have enabled language models to more fundamental comprehension of the concepts, to achieve completely absolute accuracy in symbolic reasoning without additional tools.
+  
+[**OpenReview**](https://openreview.net/forum?id=9nsNyN0vox) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
 </div>
 
@@ -56,18 +58,9 @@ My passion lies in the captivating world of natural language processing, where I
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/HoT.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[Large Language Models Need Holistically Thought in Medical Conversational QA](https://arxiv.org/abs/2305.05410)
 
-**Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao
 
-[**Project**](https://github.com/WENGSYX/HoT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We propose a holistic thinking approach for improving the performance of large language models in both Chinese and English medical conversational QA task.
-
-</div>
-</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Oral</div><img src='images/MutualSL.png' alt="sym" width="100%"></div></div>
@@ -82,6 +75,36 @@ My passion lies in the captivating world of natural language processing, where I
 
 </div>
 </div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/controllm.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ControlLM: Crafting Diverse Personalities for Language Models](https://arxiv.org/abs/2402.10151)
+
+**Yixuan Weng**, Shizhu He, Kang Liu, Shengping Liu, Jun Zhao
+
+[**Project**](https://github.com/wengsyx/ControlLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We have enabled to control the personality traits and behaviors of language models in real-time at inference without costly training interventions.
+
+</div>
+</div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/HoT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Large Language Models Need Holistically Thought in Medical Conversational QA](https://arxiv.org/abs/2305.05410)
+
+**Yixuan Weng**, Bin Li, Fei Xia, Minjun Zhu, Bin Sun, Shizhu He, Kang Liu, Jun Zhao
+
+[**Project**](https://github.com/WENGSYX/HoT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose a holistic thinking approach for improving the performance of large language models in both Chinese and English medical conversational QA task.
+
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/LMTuner.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -124,6 +147,18 @@ Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zha
 **Project** <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We propose ReliAble Path-retrieval (RAP) for complex QA over knowledge graphs, which iteratively retrieves multi-hop reasoning chains. It models chains comprehensively and introduces losses from two views. Experiments show state-of-the-art performance on evidence retrieval and QA. Additional results demonstrate the importance of modeling sequence information for evidence chains.
 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLING 2024 Poster</div><img src='images/reasongraphqa.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Graph-hop Retrieval and Reasoning in Complex Question Answering over Textual Database](https://arxiv.org/abs/2305.14211)
+
+Minjun Zhu, **Yixuan Weng**, Shizhu He, Kang Liu, Haifeng Liu, Yang Jun, Jun Zhao
+
+**Project** <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose to conduct Graph-Hop - a novel multi-chains and multi-hops retrieval and reasoning paradigm in complex question answering. We construct a new benchmark called ReasonGraphQA, which provides explicit and fine-grained evidence graphs for complex question to support comprehensive and detailed reasoning. 
 </div>
 </div>
 
