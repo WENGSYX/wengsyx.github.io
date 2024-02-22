@@ -77,6 +77,79 @@ My passion lies in the captivating world of natural language processing, where I
 </div>
 
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLING 2024 Poster</div><img src='images/reasongraphqa.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Graph-hop Retrieval and Reasoning in Complex Question Answering over Textual Database](https://arxiv.org/abs/2305.14211)
+
+Minjun Zhu, **Yixuan Weng**, Shizhu He, Kang Liu, Haifeng Liu, Yang Jun, Jun Zhao
+
+**Project** <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose to conduct Graph-Hop - a novel multi-chains and multi-hops retrieval and reasoning paradigm in complex question answering. We construct a new benchmark called ReasonGraphQA, which provides explicit and fine-grained evidence graphs for complex question to support comprehensive and detailed reasoning. 
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/CCGS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning To Locate Visual Answer In Video Corpus Using Question](https://ieeexplore.ieee.org/abstract/document/10096391)
+
+Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li
+
+[**Project**](https://github.com/WENGSYX/CCGS) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose a novel approach to locate visual answers in a video corpus using a question.
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/ChainPath.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning to Build Reasoning Chains by Reliable Path Retrieval](https://ieeexplore.ieee.org/abstract/document/10097146)
+
+Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao
+
+**Project** <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose ReliAble Path-retrieval (RAP) for complex QA over knowledge graphs, which iteratively retrieves multi-hop reasoning chains. It models chains comprehensively and introduces losses from two views. Experiments show state-of-the-art performance on evidence retrieval and QA. Additional results demonstrate the importance of modeling sequence information for evidence chains.
+
+</div>
+</div>
+
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EACL 2023 Poster</div><img src='images/ATTEMPT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model](https://aclanthology.org/2023.eacl-main.73/)
+
+Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
+
+[**Project**](https://github.com/WENGSYX/ATTEMPT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Proposed two-stage ATTEMPT method for taxonomy completion. Inserts new concepts by finding parent and labeling children. Combines local nodes with prompts for natural sentences. Utilizes pre-trained language models for hypernym/hyponym recognition. Outperforms existing methods on taxonomy completion and extension tasks.
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2022 Demo</div><img src='images/LingYi.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs](https://aclanthology.org/2022.emnlp-demos.15/)
+
+Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao
+
+[**Project**](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We propose MedConQA, a medical conversational QA system using knowledge graphs, to address weak scalability, insufficient knowledge, and poor controllability in existing systems. It is a pipeline framework with open-sourced modular tools for flexibility. We construct a Chinese Medical Knowledge Graph and a Chinese Medical CQA dataset to enable knowledge-grounded dialogues. We also use SoTA techniques to keep responses controllable, as validated through professional evaluations. Code, data, and tools are open-sourced to advance research.
+
+[**Demo Video**](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/controllm.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -120,78 +193,6 @@ My passion lies in the captivating world of natural language processing, where I
 [**Homepage**](https://wengsyx.github.io/LMTuner) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
 </div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/CCGS.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Learning To Locate Visual Answer In Video Corpus Using Question](https://ieeexplore.ieee.org/abstract/document/10096391)
-
-Bin Li, **Yixuan Weng**, Bin Sun, Shutao Li
-
-[**Project**](https://github.com/WENGSYX/CCGS) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We propose a novel approach to locate visual answers in a video corpus using a question.
-
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Poster</div><img src='images/ChainPath.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Learning to Build Reasoning Chains by Reliable Path Retrieval](https://ieeexplore.ieee.org/abstract/document/10097146)
-
-Minjun Zhu, **Yixuan Weng**, Shizhu He, Cunguang Wang, Kang Liu, Li Cai, Jun Zhao
-
-**Project** <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We propose ReliAble Path-retrieval (RAP) for complex QA over knowledge graphs, which iteratively retrieves multi-hop reasoning chains. It models chains comprehensively and introduces losses from two views. Experiments show state-of-the-art performance on evidence retrieval and QA. Additional results demonstrate the importance of modeling sequence information for evidence chains.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLING 2024 Poster</div><img src='images/reasongraphqa.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Towards Graph-hop Retrieval and Reasoning in Complex Question Answering over Textual Database](https://arxiv.org/abs/2305.14211)
-
-Minjun Zhu, **Yixuan Weng**, Shizhu He, Kang Liu, Haifeng Liu, Yang Jun, Jun Zhao
-
-**Project** <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We propose to conduct Graph-Hop - a novel multi-chains and multi-hops retrieval and reasoning paradigm in complex question answering. We construct a new benchmark called ReasonGraphQA, which provides explicit and fine-grained evidence graphs for complex question to support comprehensive and detailed reasoning. 
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EACL 2023 Poster</div><img src='images/ATTEMPT.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Find Parent then Label Children: A Two-stage Taxonomy Completion Method with Pre-trained Language Model](https://aclanthology.org/2023.eacl-main.73/)
-
-Fei Xia, **Yixuan Weng**, Shizhu He, Kang Liu, Jun Zhao
-
-[**Project**](https://github.com/WENGSYX/ATTEMPT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Proposed two-stage ATTEMPT method for taxonomy completion. Inserts new concepts by finding parent and labeling children. Combines local nodes with prompts for natural sentences. Utilizes pre-trained language models for hypernym/hyponym recognition. Outperforms existing methods on taxonomy completion and extension tasks.
-
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2022 Demo</div><img src='images/LingYi.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs](https://aclanthology.org/2022.emnlp-demos.15/)
-
-Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Zhao
-
-[**Project**](https://github.com/WENGSYX/LingYi) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We propose MedConQA, a medical conversational QA system using knowledge graphs, to address weak scalability, insufficient knowledge, and poor controllability in existing systems. It is a pipeline framework with open-sourced modular tools for flexibility. We construct a Chinese Medical Knowledge Graph and a Chinese Medical CQA dataset to enable knowledge-grounded dialogues. We also use SoTA techniques to keep responses controllable, as validated through professional evaluations. Code, data, and tools are open-sourced to advance research.
-
-[**Demo Video**](https://www.bilibili.com/video/BV1BP4y177r8/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-
-</div>
-</div>
-
 
 # 🎖 Honors and Awards
 - *2022.05* BioNLP-2022:   Medical Video Classification, **First Place**
