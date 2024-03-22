@@ -19,6 +19,8 @@ redirect_from:
 
 My passion lies in the captivating world of natural language processing, where I love delving into its intricacies and uncovering its hidden potential. An explorer at heart, I am captivated by the thrill of investigating novel concepts, while tedious, repetitive engineering tasks hold little allure for me.
 
+My research interest includes y on the domain of QA, encompassing complex reasoning and multi-modal question-answering systems. I have garnered extensive research and engineering internship experience at the Chinese Academy of Sciences.To date, I have authored three papers as the first author, which have been published at AI conferences including the ICLR, EMNLP, and ICASSP, with total <a href='https://scholar.google.com/citations?user=O1XsDEMAAAAJ'>google scholar citations <strong><span id='total_cit'>200+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+
 
 # 🔥 News
 - *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** has accept in ICLR 2024 Poster!
