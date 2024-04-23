@@ -203,7 +203,57 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
 
+    <div class="columns is-centered">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Code</h2>
+        <h3 class="title is-4">Install</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+          <pre><code>git clone https://github.com/WENGSYX/Neural-Comprehension
+cd Neural-Comprehension
+pip install .
+          </code></pre>
+        <h3 class="title is-4">Create your CoNNs!</h3>
+          <div>
+                    <pre><code class="language-python">from NeuralCom.AutoCoNN import AutoCoNN
+
+INSTRUCT = 'Create an SOp that is the last letter of a word'
+VOCAB = ['a','b','c','d','e','f','g']
+EXAMPLE = [[['a','b','c'],['c','c','c']],[['b','d'],['d','d']]]
+
+auto = AutoCoNN()
+model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
+          </code></pre>
+        </div>
+
+                  <h3 class="title is-4">Use CoNN from huggingface!</h3>
+          <div>
+                    <pre><code class="language-python">from NeuralCom.CoNN.modeling_conn import CoNNModel
+from NeuralCom.CoNN import Tokenizer
+
+
+model = CoNNModel.from_pretrained('WENGSYX/CoNN_Reverse')
+tokenizer = Tokenizer(model.config.input_encoding_map, model.config.output_encoding_map,model.config.max_position_embeddings)
+
+output = model(tokenizer('r e v e r s e').unsqueeze(0))
+print(tokenizer.decode(output.argmax(2)))
+>>> [['bos', 'e', 's', 'r', 'e', 'v', 'e', 'r']]
+          </code></pre>
+        </div>
+        </div>
+        <br/>
+        <!--/ Interpolating. -->
+
+</section>
 
 
 <section class="section">
@@ -292,104 +342,14 @@
                 </div>
               </div>
           </center>
-          <pre><code class="language-python">def hello_world():
-           print("Hello, world!")
-          </code></pre>
         </div>
-          <pre><code class="python">
-          def hello_world():
-              print("Hello, world!")
-          </code></pre>
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-          <pre><code class="language-python">def hello_world():
-           print("Hello, world!")
-          </code></pre>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
+
         <br/>
         <!--/ Interpolating. -->
 
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Code</h2>
-        <h3 class="title is-4">Install</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-          <pre><code>git clone https://github.com/WENGSYX/Neural-Comprehension
-cd Neural-Comprehension
-pip install .
-          </code></pre>
-        <h3 class="title is-4">Create your CoNNs!</h3>
-          <div>
-                    <pre><code class="language-python">from NeuralCom.AutoCoNN import AutoCoNN
-
-INSTRUCT = 'Create an SOp that is the last letter of a word'
-VOCAB = ['a','b','c','d','e','f','g']
-EXAMPLE = [[['a','b','c'],['c','c','c']],[['b','d'],['d','d']]]
-
-auto = AutoCoNN()
-model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
-          </code></pre>
-        </div>
-
-                  <h3 class="title is-4">Use CoNN from huggingface!</h3>
-          <div>
-                    <pre><code class="language-python">from NeuralCom.CoNN.modeling_conn import CoNNModel
-from NeuralCom.CoNN import Tokenizer
-
-
-model = CoNNModel.from_pretrained('WENGSYX/CoNN_Reverse')
-tokenizer = Tokenizer(model.config.input_encoding_map, model.config.output_encoding_map,model.config.max_position_embeddings)
-
-output = model(tokenizer('r e v e r s e').unsqueeze(0))
-print(tokenizer.decode(output.argmax(2)))
->>> [['bos', 'e', 's', 'r', 'e', 'v', 'e', 'r']]
-          </code></pre>
-        </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-</section>
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -423,13 +383,6 @@ url={https://openreview.net/forum?id=9nsNyN0vox}
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
           </p>
         </div>
       </div>
