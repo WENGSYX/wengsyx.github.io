@@ -6,6 +6,35 @@
         content="Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+    pre {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-left: 3px solid #f36d33;
+        color: #666;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1em 1.5em;
+        display: block;
+        word-wrap: break-word;
+    }
+    
+    .code {
+        color: #556b2f; /* dark olive green */
+    }
+    
+    .python {
+        color: #1e90ff; /* dodger blue */
+    }
+  </style>
   <title>Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -211,7 +240,10 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Experiments</h2>
-
+          <pre><code class="python">
+          def hello_world():
+              print("Hello, world!")
+          </code></pre>
         <!-- Interpolating. -->
         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
@@ -220,6 +252,9 @@
             frames. Use the slider here to linearly interpolate between the left frame and the right
             frame.
           </p>
+          <pre><code class="language-python">def hello_world():
+           print("Hello, world!")
+          </code></pre>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
