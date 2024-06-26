@@ -65,6 +65,20 @@ My research interest includes y on the domain of QA, encompassing complex reason
 
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI</div><img src='images/VPTSL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Visual Answer Localization with Cross-Modal Mutual Knowledge Transfer](https://ieeexplore.ieee.org/abstract/document/10095026)
+
+Shutao Li, Bin Li, Bin Sun, **Yixuan Weng**
+
+[**Project**](https://github.com/WENGSYX/VPTSL) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We design the text span-based predictor, where the input text question, video subtitles, and visual prompt features are jointly learned with the pre-trained language model for enhancing the joint semantic representations.
+- 
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023 Oral</div><img src='images/MutualSL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
