@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CycleResearcher: Improving Automated Research via Automated Review">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+    pre {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-left: 3px solid #f36d33;
+        color: #666;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1em 1.5em;
+        display: block;
+        word-wrap: break-word;
+    }
+    
+    .code {
+        color: #556b2f; /* dark olive green */
+    }
+    
+    .python {
+        color: #1e90ff; /* dodger blue */
+    }
+  </style>
+  <title>CycleResearcher: Improving Automated Research via Automated Review</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/WENGSYX/ControlLM">
+            ControlLM
+          </a>
+          <a class="navbar-item" href="https://github.com/WENGSYX/Self-Verification">
+            Self-Verification
+          </a>
+          <a class="navbar-item" href="https://wengsyx.github.io/LMTuner">
+            LMTuner
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CycleResearcher: Improving Automated Research via Automated Review</h1>
+          <div class="is-size-5 publication-authors">
+            <a href="https://wengsyx.github.io">Yixuan Weng</a><sup></sup>,
+          <span class="author-block">
+            <a href="https://wengsyx.github.io">Minjun Zhu</a><sup>1,3</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://wengsyx.github.io">Guangsheng Bao</a><sup>1,3</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://wengsyx.github.io">Hongbo Zhang</a><sup>1,3</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://wengsyx.github.io">Jindong Wang</a><sup>4</sup>
+          </span>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><b>Yue Zhang</b><sup>3†</sup>,</span>
+          <span class="author-block"><b>Linyi Yang</b><sup>2</sup></span>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><sup>1</sup>Zhejiang University</span>
+          <span class="author-block"><sup>2</sup>The Hong Kong Polytechnic University</span>
+          <span class="author-block"><sup>3</sup>Westlake University</span>
+          <span class="author-block"><sup>4</sup>William & Mary</span>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          wengsyx@gmail.com, {zhuminjun, yanglinyi, zhangyue}@westlake.edu.cn
+        </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2304.01665"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/zhu-minjun/Researcher"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Pro-123B"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <!-- <i class="far fa-images"></i> -->
+                    <p style="font-size:18px">🤗</p>
+                    <!-- 🔗 -->
+                  </span>
+                  <span>CycleReviewer-123B model</span>
+                </a>
+              </span>
+                            <span class="link-block">
+                <a href="https://huggingface.co/WestlakeNLP/CycleResearcher-72B"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <!-- <i class="far fa-images"></i> -->
+                    <p style="font-size:18px">🤗</p>
+                    <!-- 🔗 -->
+                  </span>
+                  <span>CycleResearcher-72B model</span>
+                </a>
+              </span>
+                            <span class="link-block">
+                <a href="https://huggingface.co/datasets/WestlakeNLP/Research-14K"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <!-- <i class="far fa-images"></i> -->
+                    <p style="font-size:18px">🤗</p>
+                    <!-- 🔗 -->
+                  </span>
+                  <span>Researck-14K dataset</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+            <img src="./static/images/main.png"
+                 alt="main."/>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The automation of scientific discovery has been a long-standing goal within the research community, driven by the potential to accelerate knowledge creation. While significant progress has been made using commercial large language models (LLMs) as research assistants or idea generators, the possibility of automating the entire research process with open-source LLMs remains largely unexplored.
+          </p>
+          <p>
+            This paper explores the feasibility of using open-source post-trained LLMs as autonomous agents capable of performing the full cycle of automated research and review, from literature review and manuscript preparation to peer review and paper revision. Our iterative preference training framework consists of CycleResearcher, which conducts research tasks, and CycleReviewer, which simulates the peer review process, providing iterative feedback via reinforcement learning. To train these models, we develop two new datasets, Review-5k and Research-14k, reflecting real-world machine learning research and peer review dynamics.
+          </p>
+          <p>
+            Our results demonstrate that CycleReviewer achieves a 26.89\% improvement in mean absolute error (MAE) over individual human reviewers in predicting paper scores, indicating that LLMs can surpass expert-level performance in research evaluation. In research, the papers generated by the CycleResearcher model achieved a score of 5.36 in simulated peer reviews, surpassing the preprint level of 5.24 from human experts and approaching the accepted paper level of 5.69. This work represents a significant step toward fully automated scientific inquiry, providing ethical safeguards and advancing AI-driven research capabilities.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Get Start</h2>
+        <h3 class="title is-4">Install</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our model supports transformers, and you can directly load it using transformers' AutoModelForCausalLM. Considering that our trained model includes both paper and outline sections interleaved during the generation process, we recommend following the provided tutorial step by step to run it and obtain a completely new paper.
+          </p>
+          <span style="color: red; font-weight: bold">The results generated by the model are entirely fictional, and it is strongly recommended to conduct scientific discoveries by appropriately following the experimental settings provided by the model.</span>
+
+          <pre><code>git clone https://github.com/zhu-minjun/Researcher
+pip install .
+          </code></pre>
+        <h3 class="title is-4">Create your CoNNs!</h3>
+          <div>
+                    <pre><code class="language-python">from NeuralCom.AutoCoNN import AutoCoNN
+
+INSTRUCT = 'Create an SOp that is the last letter of a word'
+VOCAB = ['a','b','c','d','e','f','g']
+EXAMPLE = [[['a','b','c'],['c','c','c']],[['b','d'],['d','d']]]
+
+auto = AutoCoNN()
+model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
+          </code></pre>
+        </div>
+
+                  <h3 class="title is-4">Use CoNN from huggingface!</h3>
+          <div>
+                    <pre><code class="language-python">from NeuralCom.CoNN.modeling_conn import CoNNModel
+from NeuralCom.CoNN import Tokenizer
+
+
+model = CoNNModel.from_pretrained('WENGSYX/CoNN_Reverse')
+tokenizer = Tokenizer(model.config.input_encoding_map, model.config.output_encoding_map,model.config.max_position_embeddings)
+
+output = model(tokenizer('r e v e r s e').unsqueeze(0))
+print(tokenizer.decode(output.argmax(2)))
+>>> [['bos', 'e', 's', 'r', 'e', 'v', 'e', 'r']]
+          </code></pre>
+        </div>
+        </div>
+        <br/>
+        <!--/ Interpolating. -->
+
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiments</h2>
+       <h3 class="title is-4">Symbolic Operations</h3>
+        <div class="content has-text-justified">
+          <p>
+             We conducted an experiment to examine Neural Comprehension and learning-based methods' performance 
+            on symbolic operations with varying digit lengths. Neural Comprehension achieved high accuracy across all lengths, 
+            outperforming learning-based methods that struggled with out-of-distribution lengths, demonstrating its robustness 
+            and interpretability for symbolic tasks.
+          </p>
+<center>
+                              <div class="hero-body">
+                        <img src="./static/images/e0.png"
+                             alt="e1."/>
+            
+                </div>
+                <div class="hero-body">
+                        <img src="./static/images/e1.png"
+                             alt="e1."/>
+            
+                </div>
+              </div>
+          </center>
+
+               <h3 class="title is-4">Symbolic Reasoning</h3>
+        <div class="content has-text-justified">
+          <p>
+                     We investigate the performance of Neural Comprehension in symbolic reasoning tasks. Our hypothesis is that pretrained Language Models lack the capacity for symbolic reasoning, and incorporating CoNNs can improve their abilities.
+
+        To assess the rule comprehension component, we devise an experiment measuring the model's accuracy in a "Chain of Thought"-like manner. Our results suggest that Neural Comprehension improves symbolic reasoning capabilities and can fit faster compared to Vanilla Fine-tune.  
+
+          </p><center>
+            <div class="container is-max-desktop">
+                <div class="hero-body">
+                        <img src="./static/images/e2.png"
+                             alt="e1."/>
+            
+                </div>
+              </div></center>
+
+               <h3 class="title is-4"> Arithmetic Reasoning</h3>
+        <div class="content has-text-justified">
+          <p>
+        The experiments demonstrate that incorporating Neural Comprehension, which utilizes arithmetic neural networks like Addition and Subtraction CoNNs, significantly enhances language models' performance on complex arithmetic reasoning tasks involving longer digit lengths compared to vanilla CoT models. The results highlight Neural Comprehension's advantages over tool-based approaches in terms of efficiency, adaptability, and scalability.
+
+          </p>
+            <div class="container is-max-desktop">
+<center>
+                              <div class="hero-body">
+                        <img src="./static/images/e3.png"
+                             alt="e1."/>
+            
+                </div>
+              </div>
+          </center>
+        </div>
+
+        <br/>
+        <!--/ Interpolating. -->
+
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{
+weng2024mastering,
+title={Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks},
+author={Yixuan Weng and Minjun Zhu and Fei Xia and Bin Li and Shizhu He and Kang Liu and Jun Zhao},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=9nsNyN0vox}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/paper_iclr.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/wengsyx" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
