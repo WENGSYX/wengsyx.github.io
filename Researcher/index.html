@@ -496,36 +496,123 @@
 </div>
           </center>
 
-               <h3 class="title is-4">Symbolic Reasoning</h3>
+               <h3 class="title is-4">CycleResearcher: Overall Score</h3>
         <div class="content has-text-justified">
           <p>
-                     We investigate the performance of Neural Comprehension in symbolic reasoning tasks. Our hypothesis is that pretrained Language Models lack the capacity for symbolic reasoning, and incorporating CoNNs can improve their abilities.
-
-        To assess the rule comprehension component, we devise an experiment measuring the model's accuracy in a "Chain of Thought"-like manner. Our results suggest that Neural Comprehension improves symbolic reasoning capabilities and can fit faster compared to Vanilla Fine-tune.
-
+                    CycleResearcher-12B achieves an average score of 5.36 and an acceptance rate of 35.13% in simulated peer reviews, surpassing the preprint level of 5.24 and approaching the accepted paper level of 5.69.
           </p><center>
-            <div class="container is-max-desktop">
-                <div class="hero-body">
-                        <img src="./static/images/e2.png"
-                             alt="e1."/>
-
-                </div>
-              </div></center>
-
-               <h3 class="title is-4"> Arithmetic Reasoning</h3>
+<div style="width: 100%; margin: 0 auto;">
+    <table style="border-collapse: collapse; width: 100%; text-align: center; margin: 20px 0;">
+        <thead>
+            <tr>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" rowspan="2">Paper Type</th>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" rowspan="2">Source</th>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" colspan="3">Overall Score Metrics</th>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" rowspan="2">Accept Rate</th>
+            </tr>
+            <tr>
+                <th style="border-bottom: 1.5px solid black; padding: 8px;">Avg Min Score ↑</th>
+                <th style="border-bottom: 1.5px solid black; padding: 8px;">Avg Max Score ↑</th>
+                <th style="border-bottom: 1.5px solid black; padding: 8px;">Avg Score ↑</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-top: 1.5px solid black;">
+                <td style="padding: 8px; text-align: left;">Conference Accept Papers</td>
+                <td>Human Expert</td>
+                <td><strong>3.91</strong></td>
+                <td><strong>6.98</strong></td>
+                <td><strong>5.69</strong></td>
+                <td><strong>100.00%</strong><sup>†</sup></td>
+            </tr>
+            <tr style="border-top: 0.5px solid black;">
+                <td style="padding: 8px; text-align: left;">Preprint Papers</td>
+                <td>Human Expert</td>
+                <td>3.24</td>
+                <td>6.62</td>
+                <td>5.24</td>
+                <td>29.63%</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left;">AI Scientist</td>
+                <td>AI</td>
+                <td>2.20</td>
+                <td>5.70</td>
+                <td>4.31</td>
+                <td><i>0.00%</i></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left; background-color: #F9EBE3;"><strong>CycleResearcher-12B (Ours)</strong></td>
+                <td style="background-color: #F9EBE3;">AI</td>
+                <td style="background-color: #F9EBE3;">3.47</td>
+                <td style="background-color: #F9EBE3;"><strong>6.75</strong></td>
+                <td style="background-color: #F9EBE3;">5.36</td>
+                <td style="background-color: #F9EBE3;"><strong>35.13%</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left; background-color: #F9EBE3;"><strong>CycleResearcher-72B (Ours)</strong></td>
+                <td style="background-color: #F9EBE3;">AI</td>
+                <td style="background-color: #F9EBE3;"><strong>3.65</strong></td>
+                <td style="background-color: #F9EBE3;">6.58</td>
+                <td style="background-color: #F9EBE3;"><strong>5.38</strong></td>
+                <td style="background-color: #F9EBE3;">33.64%</td>
+            </tr>
+            <tr style="border-bottom: 2px solid black;">
+                <td style="padding: 8px; text-align: left; background-color: #F9EBE3;"><strong>CycleResearcher-123B (Ours)</strong></td>
+                <td style="background-color: #F9EBE3;">AI</td>
+                <td style="background-color: #F9EBE3;">3.31</td>
+                <td style="background-color: #F9EBE3;">6.42</td>
+                <td style="background-color: #F9EBE3;">5.13</td>
+                <td style="background-color: #F9EBE3;">21.19%</td>
+            </tr>
+        </tbody>
+    </table>
+</div></center>
+<h3 class="title is-4">CycleResearcher: Soundness, Presentation, and Contribution Analysis </h3>
         <div class="content has-text-justified">
           <p>
-        The experiments demonstrate that incorporating Neural Comprehension, which utilizes arithmetic neural networks like Addition and Subtraction CoNNs, significantly enhances language models' performance on complex arithmetic reasoning tasks involving longer digit lengths compared to vanilla CoT models. The results highlight Neural Comprehension's advantages over tool-based approaches in terms of efficiency, adaptability, and scalability.
+        Across all three dimensions, CycleResearcher-72B shows the strongest overall performance with scores approaching human expert levels, particularly in presentation (2.88) and minimum soundness (1.86).
+          </p>
+            <center>
+                <img src="./static/images/e1.png" alt="Image 1"> </a>
+          </center>
 
+               <h3 class="title is-4">Expert Evaluation</h3>
+        <div class="content has-text-justified">
+          <p>
+        Human experts rate CycleResearcher's papers significantly higher than AI Scientist's across all metrics, with an average overall score of 4.8 versus 3.6, validating the model's superior performance.
           </p>
             <div class="container is-max-desktop">
 <center>
-                              <div class="hero-body">
-                        <img src="./static/images/e3.png"
-                             alt="e1."/>
-
-                </div>
-              </div>
+                              <div style="width: 58%; margin: 0 auto;">
+    <table style="border-collapse: collapse; width: 100%; text-align: center; margin: 20px 0;">
+        <thead>
+            <tr>
+                <th style="border-top: 2px solid black; border-bottom: 1.5px solid black; padding: 8px;"><strong>Model</strong></th>
+                <th style="border-top: 2px solid black; border-bottom: 1.5px solid black; padding: 8px;"><strong>Avg. Overall</strong></th>
+                <th style="border-top: 2px solid black; border-bottom: 1.5px solid black; padding: 8px;"><strong>Avg. Soundness</strong></th>
+                <th style="border-top: 2px solid black; border-bottom: 1.5px solid black; padding: 8px;"><strong>Avg. Presentation</strong></th>
+                <th style="border-top: 2px solid black; border-bottom: 1.5px solid black; padding: 8px;"><strong>Avg. Contribution</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 8px;">AI Scientist</td>
+                <td style="padding: 8px; font-size: larger;">3.6</td>
+                <td style="padding: 8px; font-size: larger;">2.2</td>
+                <td style="padding: 8px; font-size: larger;">2.6</td>
+                <td style="padding: 8px; font-size: larger;">1.8</td>
+            </tr>
+            <tr style="border-bottom: 2px solid black;">
+                <td style="padding: 8px; background-color: #F9EBE3;">CycleResearcher</td>
+                <td style="padding: 8px; background-color: #F9EBE3; font-size: larger;"><strong>4.8</strong></td>
+                <td style="padding: 8px; background-color: #F9EBE3; font-size: larger;"><strong>2.6</strong></td>
+                <td style="padding: 8px; background-color: #F9EBE3; font-size: larger;"><strong>2.8</strong></td>
+                <td style="padding: 8px; background-color: #F9EBE3; font-size: larger;"><strong>2.2</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
           </center>
         </div>
 
