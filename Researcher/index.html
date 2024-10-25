@@ -176,29 +176,28 @@
           <div class="is-size-5 publication-authors">
             <b>Yixuan Weng</b><sup></sup>,
           <span class="author-block">
-            <b>Minjun Zhu</b><sup>1,3</sup>,
+            <b>Minjun Zhu</b><sup>1,2</sup>,
           </span>
           <span class="author-block">
-            <b>Guangsheng Bao</b><sup>1,3</sup>,
+            <b>Guangsheng Bao</b><sup>1,2</sup>,
           </span>
           <span class="author-block">
-            <b>Hongbo Zhang</b><sup>1,3</sup>,
+            <b>Hongbo Zhang</b><sup>1,2</sup>,
           </span>
           <span class="author-block">
-            <b>Jindong Wang</b><sup>4</sup>
+            <b>Jindong Wang</b><sup>3</sup>
           </span>
         </div>
 
         <div class="is-size-5 publication-authors">
-          <span class="author-block"><b>Yue Zhang</b><sup>3†</sup>,</span>
-          <span class="author-block"><b>Linyi Yang</b><sup>2</sup></span>
+          <span class="author-block"><b>Yue Zhang</b><sup>1†</sup>,</span>
+          <span class="author-block"><b>Linyi Yang</b><sup>1</sup></span>
         </div>
 
         <div class="is-size-5 publication-authors">
-          <span class="author-block"><sup>1</sup>Zhejiang University</span>
-          <span class="author-block"><sup>2</sup>The Hong Kong Polytechnic University</span>
-          <span class="author-block"><sup>3</sup>Westlake University</span>
-          <span class="author-block"><sup>4</sup>William & Mary</span>
+            <span class="author-block"><sup>1</sup>Westlake University</span>
+          <span class="author-block"><sup>2</sup>Zhejiang University</span>
+          <span class="author-block"><sup>3</sup>William & Mary</span>
         </div>
 
         <div class="is-size-5 publication-authors">
@@ -386,6 +385,155 @@
         updateCarousel();
     </script>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiments</h2>
+       <h3 class="title is-4">CycleReviewer</h3>
+        <div class="content has-text-justified">
+          <p>
+            CycleReviewer outperforms both proprietary systems and human reviewers, achieving a 48.77% reduction in Proxy MSE and a 26.89% reduction in Proxy MAE compared to human reviewers, with a decision accuracy of 74.24%.
+          </p>
+<center>
+                              <div style="width: 80%; margin: 0 auto;">
+    <table style="border-collapse: collapse; width: 100%; text-align: center; margin: 20px 0;">
+        <thead>
+            <tr>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" rowspan="2">Method</th>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" colspan="2">Proxy (Reviewer=n-1)</th>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" colspan="2">Proxy (Reviewer=n)</th>
+                <th style="border-top: 2px solid black; border-bottom: 1px solid black; padding: 8px;" colspan="2">Decision</th>
+            </tr>
+            <tr>
+                <th style="border-bottom: 1px solid black; padding: 8px;">MSE ↓</th>
+                <th style="border-bottom: 1px solid black; padding: 8px;">MAE ↓</th>
+                <th style="border-bottom: 1px solid black; padding: 8px;">MSE ↓</th>
+                <th style="border-bottom: 1px solid black; padding: 8px;">MAE ↓</th>
+                <th style="border-bottom: 1px solid black; padding: 8px;">Accuracy ↑</th>
+                <th style="border-bottom: 1px solid black; padding: 8px;">Macro F1 ↑</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-top: 1px solid black;">
+                <td style="padding: 8px; text-align: left;"><strong>Human Expert Individual</strong></td>
+                <td>2.34</td>
+                <td>1.16</td>
+                <td>-</td>
+                <td>-</td>
+                <td><strong>75.40%</strong></td>
+                <td><strong>75.39</strong></td>
+            </tr>
+            <tr style="border-top: 1px solid black;">
+                <td style="padding: 8px; text-align: left;">GPT-4o-mini</td>
+                <td>3.44</td>
+                <td>1.53</td>
+                <td>2.98</td>
+                <td>1.40</td>
+                <td>53.06%</td>
+                <td>34.72</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left;">GLM-4</td>
+                <td>4.45</td>
+                <td>1.81</td>
+                <td>3.91</td>
+                <td>1.70</td>
+                <td>49.49%</td>
+                <td>33.10</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left;">DeepSpeak-2.5</td>
+                <td>4.62</td>
+                <td>1.83</td>
+                <td>3.72</td>
+                <td>1.64</td>
+                <td>45.11%</td>
+                <td>39.98</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left;">Gemini-1.5-pro</td>
+                <td>3.02</td>
+                <td>1.34</td>
+                <td>2.56</td>
+                <td>1.23</td>
+                <td>50.98%</td>
+                <td>50.75</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left;">Claude-3.5-Sonnet</td>
+                <td>6.40</td>
+                <td>2.23</td>
+                <td>5.62</td>
+                <td>2.12</td>
+                <td>48.05%</td>
+                <td>32.44</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left;">GPT-4o</td>
+                <td>6.61</td>
+                <td>2.24</td>
+                <td>6.53</td>
+                <td>2.30</td>
+                <td>52.58%</td>
+                <td>34.51</td>
+            </tr>
+            <tr style="border-bottom: 2px solid black;">
+                <td style="padding: 8px; text-align: left; background-color: #F9EBE3;"><strong>CycleReviewer (123B)</strong></td>
+                <td style="background-color: #F9EBE3;"><strong>1.43</strong></td>
+                <td style="background-color: #F9EBE3;"><strong>0.92</strong></td>
+                <td style="background-color: #F9EBE3;"><strong>1.25</strong></td>
+                <td style="background-color: #F9EBE3;"><strong>0.87</strong></td>
+                <td style="background-color: #F9EBE3;"><strong>74.24%</strong></td>
+                <td style="background-color: #F9EBE3;"><strong>73.99</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+          </center>
+
+               <h3 class="title is-4">Symbolic Reasoning</h3>
+        <div class="content has-text-justified">
+          <p>
+                     We investigate the performance of Neural Comprehension in symbolic reasoning tasks. Our hypothesis is that pretrained Language Models lack the capacity for symbolic reasoning, and incorporating CoNNs can improve their abilities.
+
+        To assess the rule comprehension component, we devise an experiment measuring the model's accuracy in a "Chain of Thought"-like manner. Our results suggest that Neural Comprehension improves symbolic reasoning capabilities and can fit faster compared to Vanilla Fine-tune.
+
+          </p><center>
+            <div class="container is-max-desktop">
+                <div class="hero-body">
+                        <img src="./static/images/e2.png"
+                             alt="e1."/>
+
+                </div>
+              </div></center>
+
+               <h3 class="title is-4"> Arithmetic Reasoning</h3>
+        <div class="content has-text-justified">
+          <p>
+        The experiments demonstrate that incorporating Neural Comprehension, which utilizes arithmetic neural networks like Addition and Subtraction CoNNs, significantly enhances language models' performance on complex arithmetic reasoning tasks involving longer digit lengths compared to vanilla CoT models. The results highlight Neural Comprehension's advantages over tool-based approaches in terms of efficiency, adaptability, and scalability.
+
+          </p>
+            <div class="container is-max-desktop">
+<center>
+                              <div class="hero-body">
+                        <img src="./static/images/e3.png"
+                             alt="e1."/>
+
+                </div>
+              </div>
+          </center>
+        </div>
+
+        <br/>
+        <!--/ Interpolating. -->
+
+</section>
+
 <section class="section">
   <div class="container is-max-desktop">
 
@@ -404,32 +552,7 @@
           <pre><code>git clone https://github.com/zhu-minjun/Researcher
 pip install .
           </code></pre>
-        <h3 class="title is-4">Create your CoNNs!</h3>
-          <div>
-                    <pre><code class="language-python">from NeuralCom.AutoCoNN import AutoCoNN
 
-INSTRUCT = 'Create an SOp that is the last letter of a word'
-VOCAB = ['a','b','c','d','e','f','g']
-EXAMPLE = [[['a','b','c'],['c','c','c']],[['b','d'],['d','d']]]
-
-auto = AutoCoNN()
-model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
-          </code></pre>
-        </div>
-
-                  <h3 class="title is-4">Use CoNN from huggingface!</h3>
-          <div>
-                    <pre><code class="language-python">from NeuralCom.CoNN.modeling_conn import CoNNModel
-from NeuralCom.CoNN import Tokenizer
-
-
-model = CoNNModel.from_pretrained('WENGSYX/CoNN_Reverse')
-tokenizer = Tokenizer(model.config.input_encoding_map, model.config.output_encoding_map,model.config.max_position_embeddings)
-
-output = model(tokenizer('r e v e r s e').unsqueeze(0))
-print(tokenizer.decode(output.argmax(2)))
->>> [['bos', 'e', 's', 'r', 'e', 'v', 'e', 'r']]
-          </code></pre>
         </div>
         </div>
         <br/>
@@ -441,73 +564,7 @@ print(tokenizer.decode(output.argmax(2)))
 
 
 
-<section class="section">
-  <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Experiments</h2>
-       <h3 class="title is-4">Symbolic Operations</h3>
-        <div class="content has-text-justified">
-          <p>
-             We conducted an experiment to examine Neural Comprehension and learning-based methods' performance 
-            on symbolic operations with varying digit lengths. Neural Comprehension achieved high accuracy across all lengths, 
-            outperforming learning-based methods that struggled with out-of-distribution lengths, demonstrating its robustness 
-            and interpretability for symbolic tasks.
-          </p>
-<center>
-                              <div class="hero-body">
-                        <img src="./static/images/e0.png"
-                             alt="e1."/>
-            
-                </div>
-                <div class="hero-body">
-                        <img src="./static/images/e1.png"
-                             alt="e1."/>
-            
-                </div>
-              </div>
-          </center>
-
-               <h3 class="title is-4">Symbolic Reasoning</h3>
-        <div class="content has-text-justified">
-          <p>
-                     We investigate the performance of Neural Comprehension in symbolic reasoning tasks. Our hypothesis is that pretrained Language Models lack the capacity for symbolic reasoning, and incorporating CoNNs can improve their abilities.
-
-        To assess the rule comprehension component, we devise an experiment measuring the model's accuracy in a "Chain of Thought"-like manner. Our results suggest that Neural Comprehension improves symbolic reasoning capabilities and can fit faster compared to Vanilla Fine-tune.  
-
-          </p><center>
-            <div class="container is-max-desktop">
-                <div class="hero-body">
-                        <img src="./static/images/e2.png"
-                             alt="e1."/>
-            
-                </div>
-              </div></center>
-
-               <h3 class="title is-4"> Arithmetic Reasoning</h3>
-        <div class="content has-text-justified">
-          <p>
-        The experiments demonstrate that incorporating Neural Comprehension, which utilizes arithmetic neural networks like Addition and Subtraction CoNNs, significantly enhances language models' performance on complex arithmetic reasoning tasks involving longer digit lengths compared to vanilla CoT models. The results highlight Neural Comprehension's advantages over tool-based approaches in terms of efficiency, adaptability, and scalability.
-
-          </p>
-            <div class="container is-max-desktop">
-<center>
-                              <div class="hero-body">
-                        <img src="./static/images/e3.png"
-                             alt="e1."/>
-            
-                </div>
-              </div>
-          </center>
-        </div>
-
-        <br/>
-        <!--/ Interpolating. -->
-
-</section>
 
 
 <section class="section" id="BibTeX">
