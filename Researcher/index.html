@@ -9,11 +9,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
-      <style>
+          <style>
+        .carousel-wrapper {
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 50px; /* Make space for buttons */
+        }
+
         .carousel-container {
             width: 900px;
             margin: 0 auto;
-            position: relative;
             overflow: hidden;
         }
 
@@ -39,7 +45,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.7);
             color: white;
             border: none;
             padding: 15px 20px;
@@ -47,18 +53,19 @@
             font-size: 18px;
             border-radius: 5px;
             transition: background 0.3s;
+            z-index: 10; /* Ensure buttons are above images */
         }
 
         .carousel-button:hover {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
         }
 
         .carousel-button.prev {
-            left: 10px;
+            left: 0;
         }
 
         .carousel-button.next {
-            right: 10px;
+            right: 0;
         }
     </style>
   <style>
@@ -299,28 +306,30 @@
     </div>
     <!--/ Abstract. -->
 
+    <div class="carousel-wrapper">
         <div class="carousel-container">
-        <button class="carousel-button prev">&lt;</button>
-        <div class="carousel">
-            <div class="carousel-item">
-                <img src="./static/images/main.png" alt="Image 1">
-            </div>
-            <div class="carousel-item">
-                <img src="./static/images/main.png" alt="Image 2">
-            </div>
-            <div class="carousel-item">
-                <img src="./static/images/main.png" alt="Image 3">
-            </div>
-            <div class="carousel-item">
-                <img src="./static/images/main.png" alt="Image 4">
-            </div>
-            <div class="carousel-item">
-                <img src="./static/images/main.png" alt="Image 5">
-            </div>
-            <div class="carousel-item">
-                <img src="./static/images/main.png" alt="Image 6">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="./static/images/main.png" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/images/main.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/images/main.png" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/images/main.png" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/images/main.png" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/images/main.png" alt="Image 6">
+                </div>
             </div>
         </div>
+        <button class="carousel-button prev">&lt;</button>
         <button class="carousel-button next">&gt;</button>
     </div>
 
@@ -337,6 +346,12 @@
         function updateCarousel() {
             const itemWidth = items[0].offsetWidth + 10; // Width + gap
             carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+            // Update button states
+            prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
+            prevButton.style.cursor = currentIndex === 0 ? 'default' : 'pointer';
+            nextButton.style.opacity = currentIndex === totalItems - itemsToShow ? '0.5' : '1';
+            nextButton.style.cursor = currentIndex === totalItems - itemsToShow ? 'default' : 'pointer';
         }
 
         prevButton.addEventListener('click', () => {
@@ -367,6 +382,9 @@
                 }
             }
         });
+
+        // Initial update
+        updateCarousel();
     </script>
 </section>
 <section class="section">
