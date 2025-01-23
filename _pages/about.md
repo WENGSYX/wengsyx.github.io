@@ -23,6 +23,7 @@ My research interest includes y on the domain of QA, encompassing complex reason
 
 
 # 🔥 News
+- *2025.01*: &nbsp;🎉🎉 Both **CycleResearcher** (Under Ethics Review) and **Personality Alignment** have accept in ICLR 2025!
 - *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** has accept in ICLR 2024 Poster!
 - *2023.08*: &nbsp;🎉🎉 We've released **LMTuner**, a groundbreaking system where anyone can train large models in just 5 minutes!
 - *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations! 
