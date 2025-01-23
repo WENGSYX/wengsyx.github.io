@@ -38,6 +38,7 @@ My research interest includes y on the domain of QA, encompassing complex reason
 
 **Yixuan Weng**, Minjun Zhu, Guangsheng Bao, Hongbo Zhang, Jindong Wang , Yue Zhang, Linyi Yang
 
+[**HomePage**](https://wengsyx.github.io/Researcher/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 [**Project**](https://github.com/zhu-minjun/Researcher) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - The first exploration of how large language models can act as scientists to make scientific discoveries in machine learning through large-scale training and reinforcement learning, generating ideas, experiments, and results that remain effective even in the real world.
   
