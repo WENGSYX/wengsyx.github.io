@@ -30,6 +30,36 @@ My research interest includes y on the domain of QA, encompassing complex reason
 # 📝 Publications 
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025 (Under Ethics Review)</div><img src='images/cycleresearcher.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[CycleResearcher: Improving Automated Research via Automated Review](https://openreview.net/pdf?id=bjcsVLoHYs)
+
+**Yixuan Weng**, Minjun Zhu, Guangsheng Bao, Hongbo Zhang, Jindong Wang , Yue Zhang, Linyi Yang
+
+[**Project**](https://github.com/zhu-minjun/Researcher) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- The first exploration of how large language models can act as scientists to make scientific discoveries in machine learning through large-scale training and reinforcement learning, generating ideas, experiments, and results that remain effective even in the real world.
+  
+[**OpenReview**](https://openreview.net/forum?id=bjcsVLoHYs) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/palign.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Personality Alignment of Large Language Models](https://openreview.net/pdf?id=0DZEs8NpUH)
+
+Minjun Zhu, **Yixuan Weng**,  Linyi Yang, Yue Zhang
+
+[**Project**](https://github.com/zhu-minjun/PAlign) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Studies how language models can better match individual users' preferences and behaviors from two personality perspectives - the positive Big Five personality traits and the negative Dark Triad traits.
+  
+[**OpenReview**](https://openreview.net/forum?id=0DZEs8NpUH) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Poster</div><img src='images/NeuralCom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -181,7 +211,7 @@ Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Z
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/HoT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NLPCC 2024</div><img src='images/HoT.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Large Language Models Need Holistically Thought in Medical Conversational QA](https://arxiv.org/abs/2305.05410)
