@@ -19,11 +19,11 @@ redirect_from:
 
 My passion lies in the captivating world of natural language processing, where I love delving into its intricacies and uncovering its hidden potential. An explorer at heart, I am captivated by the thrill of investigating novel concepts, while tedious, repetitive engineering tasks hold little allure for me.
 
-My research interest includes y on the domain of QA, encompassing complex reasoning and multi-modal question-answering systems. I have garnered extensive research and engineering internship experience at the Chinese Academy of Sciences.To date, I have authored three papers as the first author, which have been published at AI conferences including the ICLR, EMNLP, and ICASSP, with total google scholar <a href='https://scholar.google.com/citations?user=O1XsDEMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My research interest includes AI Researcher, complex reasoning and multi-modal question-answering systems. I have garnered extensive research and engineering internship experience at the Chinese Academy of Sciences.To date, I have authored three papers as the first author, which have been published at AI conferences including the TPAMI, ICLR, EMNLP, and ICASSP, with total google scholar <a href='https://scholar.google.com/citations?user=O1XsDEMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
-- *2025.01*: &nbsp;🎉🎉 Both **CycleResearcher** (Under Ethics Review) and **Personality Alignment** have accept in ICLR 2025!
+- *2025.01*: &nbsp;🎉🎉 Both **CycleResearcher** and **Personality Alignment** have accept in ICLR 2025!
 - *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** has accept in ICLR 2024 Poster!
 - *2023.08*: &nbsp;🎉🎉 We've released **LMTuner**, a groundbreaking system where anyone can train large models in just 5 minutes!
 - *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations! 
@@ -31,7 +31,7 @@ My research interest includes y on the domain of QA, encompassing complex reason
 # 📝 Publications 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025 (Under Ethics Review)</div><img src='images/cycleresearcher.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025 Poster</div><img src='images/cycleresearcher.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [CycleResearcher: Improving Automated Research via Automated Review](https://openreview.net/pdf?id=bjcsVLoHYs)
@@ -47,7 +47,7 @@ My research interest includes y on the domain of QA, encompassing complex reason
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/palign.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025 Poster</div><img src='images/palign.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Personality Alignment of Large Language Models](https://openreview.net/pdf?id=0DZEs8NpUH)
