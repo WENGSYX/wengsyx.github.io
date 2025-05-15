@@ -32,6 +32,19 @@ My research interest includes AI Researcher, complex reasoning and multi-modal q
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 main</div><img src='images/deepreview.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DeepReview: Improving LLM-based Paper Review with Human-like Deep Thinking Process](https://arxiv.org/abs/2503.08569)
+
+ Minjun Zhu, **Yixuan Weng**, Linyi Yang , Yue Zhang
+
+[**HomePage**](https://wengsyx.github.io/Researcher/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/zhu-minjun/Researcher) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- By introducing mechanisms that simulate human thought processes and automatically retrieve literature, we trained a 14B DeepReviewer model, the first peer review system to reach human reviewer quality.
+  
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025 Poster</div><img src='images/cycleresearcher.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
