@@ -23,6 +23,8 @@ My research interest includes AI Researcher, complex reasoning and multi-modal q
 
 
 # 🔥 News
+- *2025.05*: &nbsp;🎉🎉 **DeepReview** have accept in ACL 2025!
+- *2025.04*: &nbsp;🎉🎉 We organized a two-hour [discussion session](https://ai-researcher.net/social-iclr-2025) at ICLR 2025: **AI Co-scientist Discussion**
 - *2025.01*: &nbsp;🎉🎉 Both **CycleResearcher** and **Personality Alignment** have accept in ICLR 2025!
 - *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** has accept in ICLR 2024 Poster!
 - *2023.08*: &nbsp;🎉🎉 We've released **LMTuner**, a groundbreaking system where anyone can train large models in just 5 minutes!
