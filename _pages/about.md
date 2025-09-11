@@ -263,6 +263,3 @@ Fei Xia, Bin Li, **Yixuan Weng**, Shizhu He, Kang Liu, Bin Sun, Shutao Li, Jun Z
 - *2022.01* SemEval22-Task3 PreTENS, **First Place**
 - *2021.11* SDU@AAAI-22:  Acronym Disambiguation, **First Place**
 
-
-# 💻 Internships
-- 2021.09 - , CASIA, China.
