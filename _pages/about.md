@@ -1,4 +1,4 @@
-<img width="1389" height="239" alt="image" src="https://github.com/user-attachments/assets/f1d38cb8-dc24-4412-bfa7-943805e5d7d0" />---
+---
 permalink: /
 title: ""
 excerpt: ""
@@ -19,7 +19,7 @@ redirect_from:
 
 My passion lies in the captivating world of natural language processing, where I love delving into its intricacies and uncovering its hidden potential. An explorer at heart, I am captivated by the thrill of investigating novel concepts, while tedious, repetitive engineering tasks hold little allure for me.
 
-My research interest includes constructing Automated Scientific Discovery with LLMs. My goal is to develop Discoverative Intelligence capable of forming falsifiable hypotheses, understanding real-world principles, and continuously refining their cognitive frameworks through interaction and reflection. I have garnered extensive research and engineering internship experience at the Chinese Academy of Sciences and Westlake University. To date, I have published a total of 6 Core A* (CCF-A) and 5 Core B (CCF-B) papers as either co-first author or last author, which have been published at AI conferences including the TPAMI, ICLR, ACL, EMNLP, and ICASSP, with total google scholar <a href='https://scholar.google.com/citations?user=O1XsDEMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I was also invited to serve as an Area Chair for ICLR 2026.
+My research interest includes constructing Automated Scientific Discovery with LLMs. My goal is to develop Discoverative Intelligence, an AI system with the ability to form falsifiable hypotheses, understand real-world principles, and continuously refine its cognitive frameworks through interaction and reflection. I have garnered extensive research and engineering internship experience at the Chinese Academy of Sciences and Westlake University. To date, I have published a total of 6 Core A* (CCF-A) and 5 Core B (CCF-B) papers as either co-first author or last author, which have been published at AI conferences including the TPAMI, ICLR, ACL, EMNLP, and ICASSP, with total google scholar <a href='https://scholar.google.com/citations?user=O1XsDEMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I was also invited to serve as an Area Chair for ICLR 2026.
 
 
 # 🔥 News
