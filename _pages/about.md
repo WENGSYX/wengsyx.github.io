@@ -23,6 +23,7 @@ My research interest includes constructing Automated Scientific Discovery with L
 
 
 # 🔥 News
+- *2026.01*: &nbsp;🎉🎉 Both **DeepScientist** and **AutoFigure** have accept in ICLR 2025!
 - *2025.05*: &nbsp;🎉🎉 **DeepReview** have accept in ACL 2025!
 - *2025.04*: &nbsp;🎉🎉 We organized a two-hour [discussion session](https://ai-researcher.net/social-iclr-2025) at ICLR 2025: **AI Co-scientist Discussion**
 - *2025.01*: &nbsp;🎉🎉 Both **CycleResearcher** and **Personality Alignment** have accept in ICLR 2025!
@@ -31,6 +32,37 @@ My research interest includes constructing Automated Scientific Discovery with L
 - *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations! 
 
 # 📝 Publications 
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 main</div><img src='images/DeepScientistFigure.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DeepScientist: Advancing Frontier-Pushing Scientific Findings Progressively](https://openreview.net/forum?id=cZFgsLq8Gs)
+
+**Yixuan Weng**, Minjun Zhu, Qiujie Xie, QiYao Sun, Zhen Lin, Sifan Liu, Yue Zhang 
+
+[**HomePage**](https://deepscientist.cc) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ResearAI/DeepScientist) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- This is the first empirical demonstration of an AI that acts as an autonomous scientist to progressively push research frontiers, successfully discovering novel methods that outperform the human SOTA across multiple domains.
+  
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 main</div><img src='images/AutoFigure.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[AutoFigure: Generating and Refining Publication-Ready Scientific Illustrations](https://openreview.net/forum?id=5N3z9JQJKq)
+
+Minjun Zhu, Zhen Lin, **Yixuan Weng**, Panzhong Lu, Qiujie Xie, Yifan Wei, Sifan Liu, QiYao Sun, Yue Zhang 
+
+[**HomePage**](https://deepscientist.cc) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We introduce **FigureBench**, the first large-scale benchmark for scientific illustration generation from long-form scientific text, featuring 3,300 high-quality text–figure pairs across diverse sources and task types.
+- Then we propose **AutoFigure**, an agentic framework that plans, recombines, and validates layouts before rendering, producing structurally complete and aesthetically refined, publication-ready scientific figures that consistently outperform strong baselines on FigureBench.
+  
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 main</div><img src='images/deepreview.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
