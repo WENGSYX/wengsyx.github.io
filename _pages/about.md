@@ -23,7 +23,7 @@ My research interest includes constructing Automated Scientific Discovery with L
 
 
 # 🔥 News
-- *2026.01*: &nbsp;🎉🎉 Both **DeepScientist** and **AutoFigure** have accept in ICLR 2025!
+- *2026.01*: &nbsp;🎉🎉 Both **DeepScientist** and **AutoFigure** have accept in ICLR 2026!
 - *2025.05*: &nbsp;🎉🎉 **DeepReview** have accept in ACL 2025!
 - *2025.04*: &nbsp;🎉🎉 We organized a two-hour [discussion session](https://ai-researcher.net/social-iclr-2025) at ICLR 2025: **AI Co-scientist Discussion**
 - *2025.01*: &nbsp;🎉🎉 Both **CycleResearcher** and **Personality Alignment** have accept in ICLR 2025!
