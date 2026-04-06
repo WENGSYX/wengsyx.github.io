@@ -19,7 +19,7 @@ redirect_from:
 
 My passion lies in the captivating world of natural language processing, where I love delving into its intricacies and uncovering its hidden potential. An explorer at heart, I am captivated by the thrill of investigating novel concepts, while tedious, repetitive engineering tasks hold little allure for me.
 
-My research interest includes constructing Automated Scientific Discovery with LLMs. My goal is to develop Discoverative Intelligence, an AI system with the ability to form falsifiable hypotheses, understand real-world principles, and continuously refine its cognitive frameworks through interaction and reflection. I have garnered extensive research and engineering internship experience at the Chinese Academy of Sciences and Westlake University. To date, I have published a total of 6 Core A* (CCF-A) and 5 Core B (CCF-B) papers as either co-first author or last author, which have been published at AI conferences including the TPAMI, ICLR, ACL, EMNLP, and ICASSP, with total google scholar <a href='https://scholar.google.com/citations?user=O1XsDEMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I was also invited to serve as an Area Chair for ICLR 2026.
+My research interest includes constructing Automated Scientific Discovery with LLMs. My goal is to develop Discoverative Intelligence, an AI system with the ability to form falsifiable hypotheses, understand real-world principles, and continuously refine its cognitive frameworks through interaction and reflection. I have garnered extensive research and engineering internship experience at the Chinese Academy of Sciences and Westlake University. To date, I have published a total of 6 Core A* (CCF-A) and 5 Core B (CCF-B) papers as either co-first author or last author, which have been published at AI conferences including the TPAMI, ICLR, ACL, EMNLP, and ICASSP, with total google scholar <a href='https://scholar.google.com/citations?user=O1XsDEMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. Beyond my publications, I am highly dedicated to community service and open-source initiatives. This commitment is reflected in my recent invitation to serve as an Area Chair for ICLR 2026, and the impact of my project, [DeepScientist](https://github.com/ResearAI/DeepScientist), which ranked among the top 10 most-starred research projects of all ICLR 2026 accepted papers.
 
 
 # 🔥 News
@@ -30,6 +30,86 @@ My research interest includes constructing Automated Scientific Discovery with L
 - *2024.01*: &nbsp;🎉🎉 **Neural Comprehension** has accept in ICLR 2024 Poster!
 - *2023.08*: &nbsp;🎉🎉 We've released **LMTuner**, a groundbreaking system where anyone can train large models in just 5 minutes!
 - *2023.04*: &nbsp;🎉🎉 We've created **Neural Comprehension** - a breakthrough enabling LLMs to master symbolic operations! 
+
+
+<style>
+.repo-row-wrap {
+  margin: 28px 0;
+}
+
+.repo-row-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.repo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.repo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.repo-pill:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+}
+
+.repo-pill-name {
+  font-weight: 700;
+  color: #111827;
+}
+
+.repo-pill img {
+  height: 20px;
+}
+</style>
+
+<div class="repo-row-wrap">
+  <div class="repo-row-title">Repository</div>
+  <div class="repo-row">
+    <a class="repo-pill" href="https://github.com/ResearAI/DeepScientist" target="_blank" rel="noopener">
+      <span class="repo-pill-name">DeepScientist</span>
+      <img src="https://img.shields.io/github/stars/ResearAI/DeepScientist?style=social&label=Stars" alt="DeepScientist stars">
+    </a>
+
+    <a class="repo-pill" href="https://github.com/zhu-minjun/Researcher" target="_blank" rel="noopener">
+      <span class="repo-pill-name">CycleResearcher & DeepReviewer </span>
+      <img src="https://img.shields.io/github/stars/zhu-minjun/Researcher?style=social&label=Stars" alt="CycleResearcher stars">
+    </a>
+
+    <a class="repo-pill" href="https://github.com/ResearAI/AutoFigure" target="_blank" rel="noopener">
+      <span class="repo-pill-name">AutoFigure</span>
+      <img src="https://img.shields.io/github/stars/ResearAI/AutoFigure?style=social&label=Stars" alt="AutoFigure stars">
+    </a>
+    
+    <a class="repo-pill" href="https://github.com/ResearAI/AutoFigure-Edit" target="_blank" rel="noopener">
+      <span class="repo-pill-name">AutoFigure-Edit</span>
+      <img src="https://img.shields.io/github/stars/ResearAI/AutoFigure-Edit?style=social&label=Stars" alt="AutoFigure-Edit stars">
+    </a>
+
+
+
+    <a class="repo-pill" href="https://github.com/ResearAI/DeepReviewer-v2" target="_blank" rel="noopener">
+      <span class="repo-pill-name">DeepReviewer v2</span>
+      <img src="https://img.shields.io/github/stars/ResearAI/DeepReviewer-v2?style=social&label=Stars" alt="LLM-Eval stars">
+    </a>
+  </div>
+</div>
+
 
 # 📝 Publications 
 
@@ -62,6 +142,7 @@ Minjun Zhu, Zhen Lin, **Yixuan Weng**, Panzhong Lu, Qiujie Xie, Yifan Wei, Sifan
   
 </div>
 </div>
+
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 main</div><img src='images/deepreview.png' alt="sym" width="100%"></div></div>
