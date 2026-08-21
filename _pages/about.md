@@ -23,7 +23,7 @@ My research interest includes constructing Automated Scientific Discovery with L
 
 
 # 🔥 News
-- *2026.01*: &nbsp;🎉🎉 4 papers have accept in EMNLP 2026 Main!
+- *2026.08*: &nbsp;🎉🎉 4 papers have accept in EMNLP 2026 Main!
 - *2026.01*: &nbsp;🎉🎉 Both **DeepScientist** and **AutoFigure** have accept in ICLR 2026!
 - *2025.05*: &nbsp;🎉🎉 **DeepReview** have accept in ACL 2025!
 - *2025.04*: &nbsp;🎉🎉 We organized a two-hour [discussion session](https://ai-researcher.net/social-iclr-2025) at ICLR 2025: **AI Co-scientist Discussion**
